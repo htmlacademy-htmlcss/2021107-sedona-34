@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Александр Паршин](https://up.htmlacademy.ru/htmlcss/34/user/2021107).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Асташина](https://htmlacademy.ru/profile/helen_astashina).
 
 ---
 
