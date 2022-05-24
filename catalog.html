@@ -121,8 +121,25 @@
                   Апартаменты
                 </label>
               </li>
-
             </ul>
+          </fieldset>
+
+          <!-- Выбор диапазона -->
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <label class="control">
+              <div class="price-width-min">
+                <p class="min-price">
+                  0 <span class="beginning-price">от</span>
+                </p>
+              </div>
+              <input class="catalog-range" type="range" name="dayscount" min="0" max="9000" step="1">
+              <div class="price-width-max">
+                <p class="max-price">
+                  900 <span class="end-price">до</span>
+                </p>
+              </div>
+            </label>
           </fieldset>
         </form>
       </section>
