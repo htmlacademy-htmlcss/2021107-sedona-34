@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="navigation">
+
+        <!-- Логотип Сидоны -->
+        <a class="navigation-logo" href="index.html"> <!--На данной странице ссылка не нужна-->
+          <img class="page-header-logo" alt="Логотип сайта города Сидона." src="#">
+        </a>
+
+        <!-- Навигация по страницам сайта -->
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <!-- class="navigation-link-current" оформление активной ссылки -->
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+
+        <!-- Визуальная навигация для пользователя -->
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <!-- class="visually-hidden" служит для скрытия эл-та -->
+              <span class="visually-hidden" href="#">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Избранные гостиницы</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link button" href="#">ХОЧУ СЮДА!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Основное содержимое страницы каьалога -->
+    <main class="main-inner">
+
+      <!-- В файле catalog.html раскоментировать 2 строчку и удалить 1 строчку -->
+      <!-- <section class="main-footer"> -->
+      <section class="main-footer white-theme">
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <strong class="subscribe">Подпишитесь на рассылку</strong>
+          <p class="main-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="main-footer-form">
+            <form class="description-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input type="email" name="email" placeholder="Ваш e-mail">
+              <button class="button" type="submit">Подписаться</button>
+            </form>
+          </p>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="footer-social">
+        <!-- Социальные сети -->
+        <ul class="footer-social-list">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <li class="footer-social-item VK">
+            <a class="button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="footer-social-item Telegram">
+            <a class="button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="footer-social-item YouTube">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Контактная информация -->
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <address class="footer-contacts-addres">
+          <a class="footer-contacts-addres-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
+      </section>
+
+      <!-- логотип html academy -->
+      <section class="footer-partner">
+        <h2 class="visually-hidden">Партнёры</h2>
+        <a class="footer-partner" href="https://htmlacademy.ru/">
+          <img class="footer-partner-logo" alt="Логотип htmlacademy" src="#">
+        </a>
+      </section>
+    </footer>
+
+  </body>
+</html>
