@@ -26,6 +26,7 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
+      </nav>
 
         <!-- Визуальная навигация для пользователя -->
         <ul class="navigation-list navigation-user">
@@ -36,14 +37,13 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Избранные гостиницы</a>
-            <span class="heart-counter">12</span>
+            <a class="navigation-link" href="#"><span class="visually-hidden">Избранные гостиницы</span><span class="heart-counter">12</span></a>
+
           </li>
           <li class="navigation-item">
             <a class="navigation-link button" href="#">ХОЧУ СЮДА!</a>
           </li>
         </ul>
-      </nav>
     </header>
 
     <!-- Основное содержимое главной страницы -->
@@ -52,52 +52,43 @@
       <img class="page-main-logo" alt="Логотип городка Седона" src="#">
 
       <section class="advantages">
-        <h2 class="advantages-main-index">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="advantages-reason">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <h2 class="visually-hidden">Преимущества Седона</h2>
+        <p class="advantages-lead-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
 
         <!-- 1 преимущество-->
-        <ul class="advantages-list">
+        <ol class="advantages-list">
           <!-- 1 карточка-->
           <li class="advantages-item heavenly-theme">
             <h3 class="advantages-example">Настоящий городок</h3>
             <p class="advantages-number">— №1 —</p>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </li>
-          <!-- 2 карточка фотография-->
-          <li class="advantages-item">
             <img class="advantages-img" alt="Фотография городка" src="#">
+            <ul class="">
+              <!-- 3 карточка-->
+              <li class="advantages-item">
+                <h3 class="advantages-example">Жильё</h3>
+                <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <!-- 4 карточка-->
+              <li class="advantages-item white-theme"> <!-- добавить CSS св-во backgroun-image: none; для <section class="main-footer"> из catalog.html -->
+                <h3 class="advantages-example">Еда</h3>
+                <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+             </li>
+             <!-- 5 карточка-->
+             <li class="advantages-item">
+              <h3 class="advantages-example">Сувениры</h3>
+              <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
+              </li>
+            </ul>
           </li>
-          <!-- 3 карточка-->
-          <li class="advantages-item">
-            <h3 class="advantages-example">Жильё</h3>
-            <div class="advantages-logo"></div>
-            <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-          <!-- 4 карточка-->
-          <li class="advantages-item white-theme"> <!-- добавить CSS св-во backgroun-image: none; для <section class="main-footer"> из catalog.html -->
-            <h3 class="advantages-example">Еда</h3>
-            <div class="advantages-logo"></div>
-            <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <!-- 5 карточка-->
-          <li class="advantages-item">
-            <h3 class="advantages-example">Сувениры</h3>
-            <div class="advantages-logo"></div>
-            <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
-          </li>
-        </ul>
 
-        <!-- 2 преимущество-->
-        <ul class="advantages-list">
           <!-- 1 карточка-->
           <li class="advantages-item heavenly-theme">
+            <img class="advantages-img" alt="Фотография моста дьявола." src="#">
             <h3 class="advantages-example">Там есть мост дьявола</h3>
             <p class="advantages-number">— №2 —</p>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          </li>
-          <!-- 2 карточка фотография-->
-          <li class="advantages-item">
-            <img class="advantages-img" alt="Фотография моста дьявола." src="#">
           </li>
           <!-- 3 карточка-->
           <li class="advantages-item">
@@ -117,25 +108,23 @@
             <p class="advantages-number">— №5 —</p>
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-        </ul>
+        </ol>
       </section>
 
       <section class="search">
-        <h2 class="visually-hidden">Помощь в поиске гостиницы</h2>
-        <strong class="search-heading">Заинтересовались?</strong>
+        <h2 class="search-title">Заинтересовались?</h2>
         <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="search-link button" href="catalog.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <a class="search-link button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
 
 	    <!-- В файле catalog.html раскоментировать 2 строчку и удалить 1 строчку -->
       <section class="main-footer">
       <!-- <section class="main-footer white-theme"> -->
-        <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <strong class="subscribe">Подпишитесь на рассылку</strong>
+        <h2 class="subscribe">Подпишитесь на рассылку</h2>
         <p class="main-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <div class="main-footer-form">
           <form class="description-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" name="email" placeholder="Ваш e-mail">
+            <label class=""><input type="email" name="email" placeholder="Ваш e-mail"></label>
             <button class="button" type="submit">Подписаться</button>
           </form>
         </div>
@@ -168,9 +157,7 @@
       <!-- Контактная информация -->
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <address class="footer-contacts-addres">
-          <a class="footer-contacts-addres-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </address>
+        <a class="footer-contacts-addres-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
 
       <!-- логотип html academy -->

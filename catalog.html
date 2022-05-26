@@ -48,7 +48,7 @@
 
     <!-- Основное содержимое страницы каьалога -->
     <main class="main-inner">
-      <header class="inner-header">
+      <section class="catalog-hotels">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <!-- Хлебные крошки -->
         <ul class="breadcrumbs">
@@ -63,10 +63,7 @@
             </a>
           </li>
         </ul>
-      </header>
 
-      <section class="catalog-hotels">
-        <h2 class="visually-hidden">Каталог гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
 
           <!-- Инфраструктура -->
@@ -75,21 +72,21 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                  <input class="control-input" type="checkbox" name="infrastructure" value="swimming-pool" checked>
 
                   Бассейн
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked>
+                  <input class="control-input" type="checkbox" name="infrastructure" value="parking" checked>
 
                   Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Wi-Fi">
+                  <input class="control-input" type="checkbox" name="infrastructure" value="Wi-Fi">
 
                   Wi-Fi
                 </label>
@@ -140,25 +137,33 @@
           </fieldset>
 
           <button class="button" type="submit">Применить</button>
-          <input class="button-reset" type="reset" value="Сбросить">
+          <button class="button-reset" type="reset">Сбросить</button>
         </form>
 
         <div class="result-sorting">
-          <strong class="result">Найдено гостиниц: 38</strong>
+          <p class="result">Найдено гостиниц: 38</p>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
-          <a class="button button-active" href="#">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="button" href="#">
-            <span class="visually-hidden">Показать крупные карточки</span>
-          </a>
-          <a class="button" href="#">
-            <span class="visually-hidden">Показать список</span>
-          </a>
+          <ul class="result-view">
+            <li class="">
+              <a class="button button-active" href="#">
+                <span class="visually-hidden">Показать плиткой</span>
+              </a>
+            </li>
+            <li class="">
+              <a class="button" href="#">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+            </li>
+            <li class="">
+              <a class="button" href="#">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </li>
+          </ul>
         </div>
 
         <ul class="hotel-list">
@@ -166,10 +171,12 @@
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" src="#" alt="">
-              <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
-            <span class="type-hotel">Гостиница</span>
-            <span class="room-price">От 4000 ₽</span>
+            <h3 class="hotel-card-title"><a href="#">Amara Resort & Spa</a></h3>
+            <p class="">
+              <span class="type-hotel">Гостиница</span>
+              <span class="room-price">От 4000 ₽</span>
+            </p>
             <a class="hotel-card-button button">подробнее</a>
             <a class="hotel-card-button button">в избранное</a>
             <div class="star"></div>
@@ -238,14 +245,14 @@
           </li>
         </ul>
 
-        <p class="pagination-sorting">
-          <strong class="sum-hotel">Гостиниц на странице:</strong>
+        <div class="pagination-sorting">
+          <p class="sum-hotel">Гостиниц на странице:</p>
           <select class="select-pagination" aria-label="Количество отелей на странице">
             <option value="4">4</option>
             <option value="10">10</option>
             <option value="20">20</option>
           </select>
-        </p>
+        </div>
       </section>
 
       <!-- В файле catalog.html раскоментировать 2 строчку и удалить 1 строчку -->
