@@ -83,6 +83,12 @@ body {
   line-height: 26px;
 }
 
+/*Карточки преимуществ*/
+
+.advantages-item {
+  list-style-type: none;
+}
+
 .advantages-card {
   color: #ffffff;
   background-color: #82B3D3;
@@ -119,6 +125,31 @@ body {
 .advantages-description {
   font-weight: 400;
   color: #333333;
+}
+
+/*section search*/
+
+.search {
+  text-align: center;
+}
+
+.search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.search-link {
+  font-size: 20px;
+  line-height: 36px;
 }
 
 
