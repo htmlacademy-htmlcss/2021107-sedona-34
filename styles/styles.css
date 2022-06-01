@@ -19,10 +19,13 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+
 }
 
 /*фоновое изображение основного логотипа страницы*/
-.main-index {
+.page-main-logo {
   background-image: url("../images/index/index-background.jpg");
   background-repeat: no-repeat;
   background-color: #ffffff;
