@@ -89,6 +89,14 @@ body {
   list-style-type: none;
 }
 
+.advantages-item.light-theme {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item.dark-grey-theme {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
 .advantages-card {
   color: #ffffff;
   background-color: #82B3D3;
