@@ -42,7 +42,7 @@ body {
   background-color: #ffffff; /*Зачем ведь в .page-header задано?*/
 }
 
-.button {
+.navigation .button {
   background-color: #756157;
   color: #ffffff;
   font-size: 16px;
@@ -77,10 +77,51 @@ body {
   line-height: 26px;
 }
 
+.advantages-card {
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-align: center;
+}
+
+.advantages-example {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-number {
+  font-weight: 400;
+}
+
+.advantages-card .advantages-description {
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.advantages-item {
+  text-align: center;
+}
+
+.advantages-example {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-weight: 400;
+  color: #333333;
+}
+
+
+
 
 /*фоновое изображение рассылки*/
 .main-footer {
   background-image: url("../images/index/background-subscribe.jpg");
   background-color: #000000;
   color: #ffffff;
+
 }
