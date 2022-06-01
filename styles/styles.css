@@ -1,0 +1,37 @@
+/*Подключаем шрифты*/
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/*фоновое изображение основного логотипа страницы*/
+.main-index {
+  background-image: url("../images/index/index-background.jpg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*фоновое изображение рассылки*/
+.main-footer {
+  background-image: url("../images/index/background-subscribe.jpg");
+  background-color: #000000;
+  color: #ffffff;
+}
