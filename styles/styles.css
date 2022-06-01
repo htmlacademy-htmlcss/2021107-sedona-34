@@ -53,7 +53,7 @@ body {
 /*main основное содержание*/
 
  /*фоновое изображение основного логотипа страницы*/
-.page-main-logo {
+.page-main-logo-wrap {
   background-color: #ffffff;
   color: #000000;
   background-image: url("../images/index/index-background.jpg");
