@@ -42,6 +42,14 @@ body {
   background-color: #ffffff; /*Зачем ведь в .page-header задано?*/
 }
 
+.button {
+  background-color: #756157;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
 /*main основное содержание*/
 
  /*фоновое изображение основного логотипа страницы*/
