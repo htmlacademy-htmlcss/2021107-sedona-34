@@ -17,10 +17,20 @@
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 22px;
+  line-height: 26px;
   color: #000000;
   background-color: #ffffff;
+}
+
+.button {
+  font-family: "PT Sans", sans-serif;
+  background-color: #756157;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
 }
 
 /* Pages (Шапка)*/
@@ -40,16 +50,6 @@ body {
   text-decoration: none;
   text-align: center;
   background-color: #ffffff; /*Зачем ведь в .page-header задано?*/
-}
-
-.button {
-  font-family: "PT Sans", sans-serif;
-  background-color: #756157;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
 }
 
 .navigation-link-button {
