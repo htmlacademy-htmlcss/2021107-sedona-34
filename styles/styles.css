@@ -37,7 +37,6 @@ body {
 /* Pages (Шапка)*/
 
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
@@ -45,12 +44,7 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   text-align: center;
-  background-color: #ffffff; /*Зачем ведь в .page-header задано?*/
-}
-
-.navigation-link-button {
-  font-size: 16px;
-  line-height: 20px;
+  background-color: #ffffff;
 }
 
 /*main основное содержание*/
@@ -76,28 +70,18 @@ body {
   color: #333333;
   text-align: center;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
 }
 
 /*Карточки преимуществ*/
 
 .advantages-item {
   list-style-type: none;
-}
-
-.advantages-item.light-theme {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-item.dark-grey-theme {
-  background-color: rgba(131, 179, 211, 0.2);
+  text-align: center;
 }
 
 .advantages-card {
   color: #ffffff;
   background-color: #82B3D3;
-  text-align: center;
 }
 
 .advantages-example {
@@ -109,28 +93,30 @@ body {
 
 .advantages-number {
   font-weight: 400;
-}
-
-.advantages-card .advantages-description {
-  font-weight: 400;
-  color: #ffffff;
-}
-
-.advantages-item {
-  text-align: center;
-}
-
-.advantages-example {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .advantages-description {
   font-weight: 400;
   color: #333333;
+  font-size: 18px;
+  line-height: 21px;
 }
+
+.light-theme {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.dark-grey-theme {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-card .advantages-description {
+  color: #ffffff;
+}
+
+
 
 /*section search*/
 
@@ -147,8 +133,6 @@ body {
 
 .search-description {
   font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
   color: #333333;
 }
 
@@ -177,26 +161,31 @@ body {
 
 .main-footer-description {
   font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
 }
 
-.main-footer-form {
+.description-form-wrap {
+  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
   font-weight: 400;
   text-align: center;
   opacity: 0.6;
 }
 
-.main-footer-form .button {
+.subscription-button {
   background-color:  #82B3D3;
-  color: #ffffff;
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  opacity: 1;
 }
 
 /*FOOTER*/
 
+.footer-contacts-addres-phone {
+  color: #000000;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
