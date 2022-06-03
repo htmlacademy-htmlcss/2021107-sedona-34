@@ -283,5 +283,30 @@ body {
 
 /*Pagination*/
 
+.pagination-item {
+  background-color: #82B3D3;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-item-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-link {
+  text-decoration: none;
+}
+
+.pagination-sorting {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
 
 
