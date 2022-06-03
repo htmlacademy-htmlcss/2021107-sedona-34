@@ -309,4 +309,16 @@ body {
   color: #333333;
 }
 
+/*!!! спросить насчёт присвоения класса*/
+.white-theme {
+  background-image: none;
+  background-color: #ffffff;
+}
 
+.white-theme .subscribe {
+  color: #000000;
+}
+
+.white-theme .main-footer-description {
+  color: #333333;
+}
