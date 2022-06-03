@@ -239,3 +239,49 @@ body {
   color: #ffffff;
   background-color: aqua;
 }
+
+.result {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+}
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotel-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.button-add {
+  background: #82B3D3;
+}
+
+.button-add-active {
+  background-color: #7DB54F;
+}
+
+/*Pagination*/
+
+
+
