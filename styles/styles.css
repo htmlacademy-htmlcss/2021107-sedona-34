@@ -209,3 +209,33 @@ body {
   font-size: 60px;
   line-height: 78px;
 }
+
+.breadcrumbs-link {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button-sort {
+  background-color: #82B3D3;
+}
+
+.button-reset {
+  font-weight: 400;
+  color: #ffffff;
+  background-color: aqua;
+}
