@@ -36,15 +36,19 @@ body {
 
 /* Pages (Шапка)*/
 
+.page-header {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .navigation-link {
+  color: #000000;
   font-size: 20px;
   line-height: 26px;
-  color: #000000;
   font-weight: 700;
   text-transform: capitalize;
   text-decoration: none;
   text-align: center;
-  background-color: #ffffff;
 }
 
 /*main основное содержание*/
