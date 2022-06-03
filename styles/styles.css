@@ -193,3 +193,19 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+
+/* CATALOG.HTML */
+
+.wrap-sort {
+  background-image: url("../images/catalog/catalog-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
