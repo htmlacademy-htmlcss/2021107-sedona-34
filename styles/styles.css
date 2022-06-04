@@ -32,6 +32,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Pages (Шапка)*/
@@ -53,7 +54,7 @@ body {
 
 /*main основное содержание*/
 
- /*фоновое изображение основного логотипа страницы*/
+/*фоновое изображение основного логотипа страницы*/
 .page-main-logo-wrap {
   background-color: #ffffff;
   color: #000000;
@@ -85,7 +86,7 @@ body {
 
 .advantages-card {
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .advantages-example {
@@ -119,8 +120,6 @@ body {
 .advantages-card .advantages-description {
   color: #ffffff;
 }
-
-
 
 /*section search*/
 
@@ -177,7 +176,7 @@ body {
 }
 
 .subscription-button {
-  background-color:  #82B3D3;
+  background-color: #82b3d3;
   font-size: 20px;
   line-height: 36px;
 }
@@ -198,7 +197,7 @@ body {
 
 .wrap-sort {
   background-image: url("../images/catalog/catalog-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #000000;
   color: #ffffff;
@@ -231,7 +230,7 @@ body {
 }
 
 .button-sort {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-reset {
@@ -274,17 +273,17 @@ body {
 }
 
 .button-add {
-  background: #82B3D3;
+  background: #82b3d3;
 }
 
 .button-add-active {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 /*Pagination*/
 
 .pagination-item {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: #ffffff;
   font-weight: 700;
   font-size: 20px;
@@ -294,7 +293,7 @@ body {
 }
 
 .pagination-item-current {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #000000;
 }
 
