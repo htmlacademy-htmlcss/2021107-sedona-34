@@ -32,7 +32,6 @@ body {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  cursor: pointer;
 }
 
 /* Pages (Шапка)*/
@@ -146,7 +145,7 @@ body {
 }
 
 /*фоновое изображение рассылки*/
-.main-footer {
+.subscribe {
   background-image: url("../images/index/background-subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -155,18 +154,18 @@ body {
   text-align: center;
 }
 
-.subscribe {
+.subscribe-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
-.main-footer-description {
+.subscribe-description {
   font-weight: 400;
 }
 
-.description-form-wrap {
+.subscribe-description-form-wrap {
   color: #000000;
   font-size: 18px;
   line-height: 21px;
@@ -314,10 +313,10 @@ body {
   background-color: #ffffff;
 }
 
-.white-theme .subscribe {
+.white-theme .subscribe-title {
   color: #000000;
 }
 
-.white-theme .main-footer-description {
+.white-theme .subscribe-description {
   color: #333333;
 }
