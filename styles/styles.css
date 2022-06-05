@@ -149,8 +149,9 @@ body {
 /*фоновое изображение рассылки*/
 .subscribe {
   background-image: url("../images/index/background-subscribe.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   background-color: #000000;
   color: #ffffff;
   text-align: center;
@@ -197,6 +198,7 @@ body {
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   background-color: #000000;
   color: #ffffff;
 }
