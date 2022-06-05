@@ -24,6 +24,7 @@ body {
 }
 
 .button {
+  font-family: "PT Sans", sans-serif;
   background-color: #756157;
   color: #ffffff;
   font-size: 16px;
@@ -32,6 +33,12 @@ body {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 /* Pages (Шапка)*/
@@ -64,9 +71,6 @@ body {
 
 .advantages-lead-text {
   text-align: center;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -127,9 +131,6 @@ body {
 }
 
 .search-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
   text-transform: uppercase;
 }
 
@@ -155,9 +156,6 @@ body {
 }
 
 .subscribe-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
   text-transform: uppercase;
 }
 
@@ -239,13 +237,11 @@ body {
 }
 
 .result {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
   text-transform: uppercase;
 }
 
 .select-control {
+  font-family: "PT Sans", sans-serif;
   color: #333333;
   font-weight: 400;
   font-size: 18px;
