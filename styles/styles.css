@@ -75,6 +75,10 @@ body {
 
 /*main основное содержание*/
 
+.main-container {
+  flex-grow: 1;
+}
+
 /*фоновое изображение основного логотипа страницы*/
 .page-main-logo-wrap {
   background-color: #ffffff;
