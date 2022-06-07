@@ -81,11 +81,13 @@ body {
   margin: 0;
   padding: 0;
   width: 390px;
-  margin-left: auto;
+  /* Задать этот парметр здесь или только  navigation-user*/
+  /* margin-left: auto; */
 }
 
 .navigation-user {
   width: 270px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -113,25 +115,46 @@ body {
   background-repeat: no-repeat;
 }
 
+.page-main-logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .advantages-lead-text {
   text-align: center;
   text-transform: uppercase;
+  width: 620px;
+  margin: 0 auto;
 }
 
 .advantages-text {
   color: #333333;
   text-align: center;
   font-weight: 400;
+  width: 654px;
+  margin: 0 auto;
 }
 
 /*Карточки преимуществ*/
 
+.advantages-list {
+  margin: o;
+  padding: 0;
+}
+
 .advantages-item {
+  width: 400px;
   list-style-type: none;
   text-align: center;
 }
 
+.advantages-city {
+  margin: o;
+  padding: 0;
+}
+
 .advantages-card {
+  width: 400px;
   color: #ffffff;
   background-color: #82b3d3;
 }
