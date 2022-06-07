@@ -265,6 +265,21 @@ body {
 
 /*FOOTER*/
 
+.page-footer {
+  width: 1060px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  width: 142px;
+}
+
+.footer-contacts {
+  width: 720px;
+}
+
 .footer-contacts-addres-phone {
   color: #000000;
   font-weight: 400;
@@ -273,6 +288,10 @@ body {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+}
+
+.footer-partner {
+  width: 115px;
 }
 
 /* CATALOG.HTML */
