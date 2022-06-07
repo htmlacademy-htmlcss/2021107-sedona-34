@@ -233,6 +233,13 @@ body {
 
 .subscribe-description {
   font-weight: 400;
+  width: 475px;
+  margin: 0 auto;
+}
+
+.subscribe-form-wrap {
+  width: 800px;
+  margin: 0 auto;
 }
 
 .subscribe-description-form-wrap {
@@ -242,6 +249,8 @@ body {
   font-weight: 400;
   text-align: center;
   opacity: 0.6;
+  /* св-во не работает */
+  /* width: 600px; */
 }
 
 .subscription-button {
@@ -249,6 +258,9 @@ body {
   font-size: 20px;
   line-height: 36px;
   border: none;
+  width: 200px;
+  padding: 0;
+  margin: 0;
 }
 
 /*FOOTER*/
