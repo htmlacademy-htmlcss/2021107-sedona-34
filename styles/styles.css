@@ -199,11 +199,15 @@ body {
 
 .search-title {
   text-transform: uppercase;
+  width: 297px;
+  margin: 0 auto;
 }
 
 .search-description {
   font-weight: 400;
   color: #333333;
+  width: 592px;
+  margin: 0 auto;
 }
 
 .search-link {
