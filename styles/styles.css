@@ -21,9 +21,6 @@ html {
 
 body {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  /*разворачиваем главную ось */
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
@@ -36,6 +33,9 @@ body {
 .page-container {
   margin: 0 auto;
   width: 1200px;
+  display: flex;
+  flex-direction: column;
+  /*разворачиваем главную ось */
 }
 
 .button {
@@ -399,8 +399,13 @@ body {
 }
 
 .select-control {
+  font-family: "PT Sans", sans-serif;
   width: 290px;
   margin-right: 78px;
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .result-view-list {
@@ -409,12 +414,29 @@ body {
   padding: 0;
 }
 
-.select-control {
-  font-family: "PT Sans", sans-serif;
-  color: #333333;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+
+/* Карточки отелей */
+
+.hotel-list {
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-list-wrap {
+  width: 1056px;
+  margin-left: 73px;
+  margin-right: 71px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel-card {
+  width: 340px;
+  margin-right: 18px;
+}
+
+.hotel-card:nth-child(3n+3) {
+  margin-right: 0;
 }
 
 .hotel-card-link {
