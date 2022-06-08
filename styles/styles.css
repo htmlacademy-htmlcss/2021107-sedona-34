@@ -57,15 +57,18 @@ body {
   line-height: 36px;
 }
 
+/* отступ 70рх по краям и центрирование */
+.design-sections-page-container {
+  width: 1060px;
+  margin: 0 auto;
+  display: flex;
+}
+
 /* Pages (Шапка)*/
 
 .page-header {
   background-color: #ffffff;
   color: #000000;
-  /*навигация для пользователя не входит в нав*/
-  display: flex;
-  /*одинаковый отступ с краёв*/
-  padding: 0 70px;
 }
 
 .navigation {
@@ -80,13 +83,13 @@ body {
 .navigation-list {
   margin: 0;
   padding: 0;
-  width: 390px;
-  /* Задать этот парметр здесь или только  navigation-user*/
-  /* margin-left: auto; */
+  /* как говорили размер с небольшим запасом */
+  width: 480px;
 }
 
 .navigation-user {
-  width: 270px;
+  /* небольшой запас в размере */
+  width: 280px;
   margin-left: auto;
 }
 
@@ -265,10 +268,7 @@ body {
 
 /*FOOTER*/
 
-.page-footer {
-  width: 1060px;
-  margin: 0 auto;
-  display: flex;
+.page-footer-container {
   justify-content: space-between;
 }
 
