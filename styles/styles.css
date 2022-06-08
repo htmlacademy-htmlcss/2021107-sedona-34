@@ -294,6 +294,7 @@ body {
   width: 115px;
 }
 
+
 /* CATALOG.HTML */
 
 .wrap-sort {
@@ -305,10 +306,20 @@ body {
   color: #ffffff;
 }
 
+.wrap-sort-center {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-link {
@@ -319,16 +330,49 @@ body {
   text-decoration: none;
 }
 
+.catalog-filter-wrap {
+  display: flex;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   text-transform: capitalize;
 }
 
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+}
+
 .control {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+}
+
+.infrastructure {
+  width: 150px;
+  margin-right: 70px;
+}
+
+.type-housing {
+  width: 145px;
+}
+
+.range-price {
+  width: 288px;
+  margin-right: 70px;
+  margin-left: auto;
+}
+
+.button-filter-wrap {
+  width: 160px;
 }
 
 .button-sort {
