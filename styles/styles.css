@@ -468,6 +468,20 @@ body {
 
 /*Pagination*/
 
+.pagination-wrap {
+  width: 1056px;
+  margin-left: 73px;
+  margin-right: 71px;
+  display: flex;
+  Justify-content: space-between;
+}
+
+.pagination {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
 .pagination-link {
   background-color: #82b3d3;
   color: #ffffff;
@@ -485,6 +499,7 @@ body {
 }
 
 .pagination-sorting {
+  width: 386px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
