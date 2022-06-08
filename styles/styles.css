@@ -385,8 +385,28 @@ body {
   background-color: aqua;
 }
 
+.result-sorting {
+  width: 1057px;
+  margin-left: 72px;
+  margin-right: 71px;
+  display: flex;
+}
+
 .result {
   text-transform: uppercase;
+  width: 338px;
+  margin-right: 191px;
+}
+
+.select-control {
+  width: 290px;
+  margin-right: 78px;
+}
+
+.result-view-list {
+  width: 160px;
+  margin: 0;
+  padding: 0;
 }
 
 .select-control {
