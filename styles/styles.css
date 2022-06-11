@@ -294,7 +294,6 @@ body {
   width: 115px;
 }
 
-
 /* CATALOG.HTML */
 
 .wrap-sort {
@@ -414,15 +413,11 @@ body {
   padding: 0;
 }
 
-
 /* Карточки отелей */
 
 .hotel-list {
   margin: 0;
   padding: 0;
-}
-
-.hotel-list-wrap {
   width: 1056px;
   margin-left: 73px;
   margin-right: 71px;
@@ -435,7 +430,7 @@ body {
   margin-right: 18px;
 }
 
-.hotel-card:nth-child(3n+3) {
+.hotel-card:nth-child(3n + 3) {
   margin-right: 0;
 }
 
@@ -473,7 +468,7 @@ body {
   margin-left: 73px;
   margin-right: 71px;
   display: flex;
-  Justify-content: space-between;
+  justify-content: space-between;
 }
 
 .pagination {
