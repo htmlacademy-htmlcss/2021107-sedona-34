@@ -15,7 +15,13 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -23,7 +29,17 @@ body {
   background-color: #ffffff;
 }
 
+/*Контайнер для центрирования всей страницы*/
+.page-container {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  /*разворачиваем главную ось */
+}
+
 .button {
+  font-family: "PT Sans", sans-serif;
   background-color: #756157;
   color: #ffffff;
   font-size: 16px;
@@ -32,6 +48,20 @@ body {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+/* отступ 70рх по краям и центрирование */
+.design-sections-page-container {
+  width: 1060px;
+  margin: 0 auto;
+  display: flex;
 }
 
 /* Pages (Шапка)*/
@@ -39,6 +69,28 @@ body {
 .page-header {
   background-color: #ffffff;
   color: #000000;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-logo {
+  width: 139px;
+  margin-right: 30px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  /* как говорили размер с небольшим запасом */
+  width: 480px;
+}
+
+.navigation-user {
+  /* небольшой запас в размере */
+  width: 280px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -53,7 +105,11 @@ body {
 
 /*main основное содержание*/
 
- /*фоновое изображение основного логотипа страницы*/
+.main-container {
+  flex-grow: 1;
+}
+
+/*фоновое изображение основного логотипа страницы*/
 .page-main-logo-wrap {
   background-color: #ffffff;
   color: #000000;
@@ -62,30 +118,48 @@ body {
   background-repeat: no-repeat;
 }
 
+.page-main-logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .advantages-lead-text {
   text-align: center;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
   text-transform: uppercase;
+  width: 620px;
+  margin: 0 auto;
 }
 
 .advantages-text {
   color: #333333;
   text-align: center;
   font-weight: 400;
+  width: 654px;
+  margin: 0 auto;
 }
 
 /*Карточки преимуществ*/
 
+.advantages-list {
+  margin: 0;
+  padding: 0;
+}
+
 .advantages-item {
+  width: 400px;
   list-style-type: none;
   text-align: center;
 }
 
+.advantages-city {
+  margin: 0;
+  padding: 0;
+}
+
 .advantages-card {
+  width: 400px;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .advantages-example {
@@ -120,8 +194,6 @@ body {
   color: #ffffff;
 }
 
-
-
 /*section search*/
 
 .search {
@@ -129,15 +201,16 @@ body {
 }
 
 .search-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
   text-transform: uppercase;
+  width: 297px;
+  margin: 0 auto;
 }
 
 .search-description {
   font-weight: 400;
   color: #333333;
+  width: 592px;
+  margin: 0 auto;
 }
 
 .search-link {
@@ -147,42 +220,65 @@ body {
 }
 
 /*фоновое изображение рассылки*/
-.main-footer {
+.subscribe {
   background-image: url("../images/index/background-subscribe.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   background-color: #000000;
   color: #ffffff;
   text-align: center;
 }
 
-.subscribe {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
+.subscribe-title {
   text-transform: uppercase;
 }
 
-.main-footer-description {
+.subscribe-description {
   font-weight: 400;
+  width: 475px;
+  margin: 0 auto;
 }
 
-.description-form-wrap {
+.subscribe-form-wrap {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.subscribe-description-form-wrap {
   color: #000000;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   text-align: center;
   opacity: 0.6;
+  /* св-во не работает */
+  /* width: 600px; */
 }
 
 .subscription-button {
-  background-color:  #82B3D3;
+  background-color: #82b3d3;
   font-size: 20px;
   line-height: 36px;
+  border: none;
+  width: 200px;
+  padding: 0;
+  margin: 0;
 }
 
 /*FOOTER*/
+
+.page-footer-container {
+  justify-content: space-between;
+}
+
+.footer-social {
+  width: 142px;
+}
+
+.footer-contacts {
+  width: 720px;
+}
 
 .footer-contacts-addres-phone {
   color: #000000;
@@ -194,20 +290,36 @@ body {
   text-transform: uppercase;
 }
 
+.footer-partner {
+  width: 115px;
+}
+
+
 /* CATALOG.HTML */
 
 .wrap-sort {
   background-image: url("../images/catalog/catalog-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   background-color: #000000;
   color: #ffffff;
+}
+
+.wrap-sort-center {
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-link {
@@ -218,10 +330,24 @@ body {
   text-decoration: none;
 }
 
+.catalog-filter-wrap {
+  display: flex;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   text-transform: capitalize;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
 }
 
 .control {
@@ -230,8 +356,27 @@ body {
   line-height: 21px;
 }
 
+.infrastructure {
+  width: 150px;
+  margin-right: 70px;
+}
+
+.type-housing {
+  width: 145px;
+}
+
+.range-price {
+  width: 288px;
+  margin-right: 70px;
+  margin-left: auto;
+}
+
+.button-filter-wrap {
+  width: 160px;
+}
+
 .button-sort {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-reset {
@@ -240,18 +385,58 @@ body {
   background-color: aqua;
 }
 
+.result-sorting {
+  width: 1057px;
+  margin-left: 72px;
+  margin-right: 71px;
+  display: flex;
+}
+
 .result {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
   text-transform: uppercase;
+  width: 338px;
+  margin-right: 191px;
 }
 
 .select-control {
+  font-family: "PT Sans", sans-serif;
+  width: 290px;
+  margin-right: 78px;
   color: #333333;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+}
+
+.result-view-list {
+  width: 160px;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Карточки отелей */
+
+.hotel-list {
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-list-wrap {
+  width: 1056px;
+  margin-left: 73px;
+  margin-right: 71px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel-card {
+  width: 340px;
+  margin-right: 18px;
+}
+
+.hotel-card:nth-child(3n+3) {
+  margin-right: 0;
 }
 
 .hotel-card-link {
@@ -274,35 +459,47 @@ body {
 }
 
 .button-add {
-  background: #82B3D3;
+  background: #82b3d3;
 }
 
 .button-add-active {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 /*Pagination*/
 
-.pagination-item {
-  background-color: #82B3D3;
+.pagination-wrap {
+  width: 1056px;
+  margin-left: 73px;
+  margin-right: 71px;
+  display: flex;
+  Justify-content: space-between;
+}
+
+.pagination {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-link {
+  background-color: #82b3d3;
   color: #ffffff;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.pagination-item-current {
-  background-color: #F2F2F2;
-  color: #000000;
-}
-
-.pagination-link {
   text-decoration: none;
 }
 
+.pagination-link-current {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
 .pagination-sorting {
+  width: 386px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -315,10 +512,10 @@ body {
   background-color: #ffffff;
 }
 
-.white-theme .subscribe {
+.white-theme .subscribe-title {
   color: #000000;
 }
 
-.white-theme .main-footer-description {
+.white-theme .subscribe-description {
   color: #333333;
 }
