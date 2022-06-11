@@ -94,7 +94,6 @@ body {
 .navigation-list {
   margin: 0;
   padding: 0;
-  /* как говорили размер с небольшим запасом */
   max-width: 480px;
   display: flex;
   flex-wrap: wrap;
@@ -140,7 +139,7 @@ body {
 .advantages-lead-text {
   text-align: center;
   text-transform: uppercase;
-  width: 620px;
+  max-width: 620px;
   margin: 0 auto;
 }
 
@@ -148,7 +147,7 @@ body {
   color: #333333;
   text-align: center;
   font-weight: 400;
-  width: 654px;
+  max-width: 654px;
   margin: 0 auto;
 }
 
@@ -216,14 +215,14 @@ body {
 
 .search-title {
   text-transform: uppercase;
-  width: 297px;
+  max-width: 300px;
   margin: 0 auto;
 }
 
 .search-description {
   font-weight: 400;
   color: #333333;
-  width: 592px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -250,7 +249,7 @@ body {
 
 .subscribe-description {
   font-weight: 400;
-  width: 475px;
+  max-width: 475px;
   margin: 0 auto;
 }
 
@@ -275,7 +274,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   border: none;
-  width: 200px;
+  max-width: 200px;
   padding: 0;
   margin: 0;
 }
@@ -299,7 +298,7 @@ body {
 }
 
 .footer-contacts {
-  width: 720px;
+  max-width: 720px;
 }
 
 .footer-contacts-addres-phone {
@@ -381,22 +380,22 @@ body {
 }
 
 .infrastructure {
-  width: 150px;
+  max-width: 151px;
   margin-right: 70px;
 }
 
 .type-housing {
-  width: 145px;
+  max-width: 146px;
 }
 
 .range-price {
-  width: 288px;
+  max-width: 288px;
   margin-right: 70px;
   margin-left: auto;
 }
 
 .button-filter-wrap {
-  width: 160px;
+  max-width: 161px;
 }
 
 .button-sort {
@@ -524,7 +523,7 @@ body {
 }
 
 .pagination-sorting {
-  width: 386px;
+  max-width: 400px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
