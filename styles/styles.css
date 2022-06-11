@@ -29,6 +29,17 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*Контайнер для центрирования всей страницы*/
 .page-container {
   margin: 0 auto;
@@ -84,12 +95,14 @@ body {
   margin: 0;
   padding: 0;
   /* как говорили размер с небольшим запасом */
-  width: 480px;
+  max-width: 480px;
+  display: flex;
+  align-items: center;
 }
 
 .navigation-user {
   /* небольшой запас в размере */
-  width: 280px;
+  max-width: 280px;
   margin-left: auto;
 }
 
