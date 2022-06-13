@@ -146,6 +146,10 @@ body {
   margin: 0 auto;
 }
 
+.advantages {
+  margin-bottom: 91px;
+}
+
 .advantages-lead-text {
   text-align: center;
   text-transform: uppercase;
