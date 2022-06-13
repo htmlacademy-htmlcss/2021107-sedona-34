@@ -29,7 +29,7 @@ body {
   background-color: #ffffff;
 }
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -38,7 +38,7 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
 
 /*Контайнер для центрирования всей страницы*/
 .page-container {
@@ -94,6 +94,7 @@ body {
 .navigation-list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
   max-width: 480px;
   display: flex;
   flex-wrap: wrap;
@@ -114,12 +115,20 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   text-align: center;
+  padding: 17px 20px;
+}
+
+.navigation-user .navigation-link {
+  min-width: 42px;
+  min-height: 66px;
 }
 
 /*main основное содержание*/
 
 .main-container {
   flex-grow: 1;
+  padding-top: 51px;
+  padding-bottom: 94px;
 }
 
 /*фоновое изображение основного логотипа страницы*/
