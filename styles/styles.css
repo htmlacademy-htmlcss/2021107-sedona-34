@@ -127,8 +127,6 @@ body {
 
 .main-container {
   flex-grow: 1;
-  padding-top: 51px;
-  padding-bottom: 94px;
 }
 
 /*фоновое изображение основного логотипа страницы*/
@@ -138,6 +136,7 @@ body {
   background-image: url("../images/index/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding-top: 51px;
 }
 
 .page-main-logo {
@@ -250,6 +249,7 @@ body {
   background-color: #000000;
   color: #ffffff;
   text-align: center;
+  padding-bottom: 94px;
 }
 
 .subscribe-title {
