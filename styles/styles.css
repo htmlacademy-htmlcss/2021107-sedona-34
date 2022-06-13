@@ -355,6 +355,8 @@ body {
   background-position: center;
   background-color: #000000;
   color: #ffffff;
+  padding-top: 35px;
+  padding-bottom: 70px;
 }
 
 .wrap-sort-center {
@@ -363,6 +365,8 @@ body {
 }
 
 .inner-header-title {
+  margin: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -371,9 +375,11 @@ body {
 .breadcrumbs {
   margin: 0;
   padding: 0;
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   max-width: 100%; /*Спросить нащёт этого св-ва*/
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-link {
@@ -402,6 +408,7 @@ body {
 .catalog-filter-list {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .control {
@@ -444,11 +451,15 @@ body {
   margin-left: 72px;
   margin-right: 71px;
   display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 56px;
 }
 
 .result-quantity {
   text-transform: uppercase;
   max-width: 370px;
+  margin: 0;
   margin-right: auto;
 }
 
@@ -468,6 +479,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 /* Карточки отелей */
