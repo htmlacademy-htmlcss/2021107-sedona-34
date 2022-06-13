@@ -227,12 +227,14 @@ body {
 
 .search {
   text-align: center;
+  margin-bottom: 93px;
 }
 
 .search-title {
   text-transform: uppercase;
   max-width: 300px;
   margin: 0 auto;
+  margin-bottom: 29px;
 }
 
 .search-description {
@@ -240,6 +242,7 @@ body {
   color: #333333;
   max-width: 600px;
   margin: 0 auto;
+  margin-bottom: 56px;
 }
 
 .search-link {
@@ -257,17 +260,21 @@ body {
   background-color: #000000;
   color: #ffffff;
   text-align: center;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .subscribe-title {
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .subscribe-description {
   font-weight: 400;
   max-width: 475px;
   margin: 0 auto;
+  margin-bottom: 46px;
 }
 
 .subscribe-form-wrap {
