@@ -447,6 +447,7 @@ body {
   background-color: aqua;
 }
 
+/* Сортировка результатов */
 .result-sorting {
   max-width: 1057px;
   margin-left: 72px;
@@ -493,8 +494,10 @@ body {
   width: 1056px;
   margin-left: 73px;
   margin-right: 71px;
+  margin-bottom: 66px;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .hotel-card {
@@ -541,18 +544,30 @@ body {
   margin-right: 71px;
   display: flex;
   justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 25px;
 }
 
 .pagination {
   max-width: 480px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 25% 0;
   background-color: #82b3d3;
   color: #ffffff;
   font-weight: 700;
@@ -569,6 +584,7 @@ body {
 }
 
 .pagination-sorting {
+  display: flex;
   max-width: 400px;
   font-weight: 400;
   font-size: 18px;
@@ -576,6 +592,12 @@ body {
   color: #333333;
 }
 
+.sum-hotel {
+  margin-right: 51px;
+}
+
+
+/* Дополнительные стили для подписки */
 .white-theme {
   background-image: none;
   background-color: #ffffff;
