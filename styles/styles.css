@@ -378,7 +378,8 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  max-width: 100%; /*Спросить нащёт этого св-ва*/
+  max-width: 100%;
+  /*Спросить нащёт этого св-ва*/
   margin-bottom: 40px;
 }
 
@@ -465,6 +466,7 @@ body {
 
 .select-control {
   font-family: "PT Sans", sans-serif;
+  box-sizing: border-box;
   max-width: 300px;
   margin-right: 78px;
   color: #333333;
@@ -473,13 +475,14 @@ body {
   line-height: 21px;
 }
 
-.result-view-list {
-  max-width: 210px;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
+.result-sorting .button {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+}
+
+.result-sorting .button:last-child {
+  margin-right: 0;
 }
 
 /* Карточки отелей */
