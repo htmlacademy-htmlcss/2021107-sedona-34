@@ -70,7 +70,7 @@ body {
 }
 
 /* отступ 70рх по краям и центрирование */
-.design-sections-page-container {
+.inner-container {
   width: 1060px;
   margin: 0 auto;
   display: flex;
@@ -307,10 +307,13 @@ body {
 
 /*FOOTER*/
 
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
 .page-footer-container {
   justify-content: space-between;
-  margin-top: 40px;
-  margin-bottom: 30px;
 }
 
 .footer-social {
@@ -350,6 +353,10 @@ body {
 
 /* CATALOG.HTML */
 
+.catalog-hotels {
+  flex-direction: column;
+}
+
 .wrap-sort {
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: cover;
@@ -359,11 +366,6 @@ body {
   color: #ffffff;
   padding-top: 35px;
   padding-bottom: 70px;
-}
-
-.wrap-sort-center {
-  max-width: 1060px;
-  margin: 0 auto;
 }
 
 .inner-header-title {
@@ -451,9 +453,6 @@ body {
 
 /* Сортировка результатов */
 .result-sorting {
-  max-width: 1057px;
-  margin-left: 72px;
-  margin-right: 71px;
   display: flex;
   align-items: center;
   padding-top: 50px;
@@ -493,9 +492,6 @@ body {
 .hotel-list {
   margin: 0;
   padding: 0;
-  width: 1056px;
-  margin-left: 73px;
-  margin-right: 71px;
   margin-bottom: 66px;
   display: flex;
   flex-wrap: wrap;
@@ -541,9 +537,6 @@ body {
 /*Pagination*/
 
 .pagination-wrap {
-  max-width: 1056px;
-  margin-left: 73px;
-  margin-right: 71px;
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
