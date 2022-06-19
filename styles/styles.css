@@ -173,17 +173,55 @@ body {
 .advantages-list {
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
 }
 
 .advantages-item {
+  box-sizing: border-box;
   width: 400px;
   list-style-type: none;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 103px 85px;
+}
+
+.first-advantages-item .advantages-item{
+  padding: 80px 85px;
+}
+
+.first-advantages-item {
+  padding: 0;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+}
+
+.second-advantages-item {
+  padding: 0;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+}
+
+.advantages-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 92px 85px;
+}
+
+.first-advantages-item .advantages-img {
+  grid-column: 2 / -1;
 }
 
 .advantages-city {
   margin: 0;
   padding: 0;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
 }
 
 .advantages-card {
@@ -197,12 +235,16 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .advantages-number {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .advantages-description {
@@ -210,6 +252,7 @@ body {
   color: #333333;
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 .light-theme {
@@ -284,6 +327,11 @@ body {
   margin: 0 auto;
 }
 
+.subscribe-description-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
 .subscribe-description-form-wrap {
   color: #000000;
   font-size: 18px;
@@ -291,8 +339,15 @@ body {
   font-weight: 400;
   text-align: center;
   opacity: 0.6;
-  /* св-во не работает */
-  /* width: 600px; */
+}
+
+.subscribe-description-form-wrap input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .subscription-button {
@@ -300,7 +355,6 @@ body {
   font-size: 20px;
   line-height: 36px;
   border: none;
-  max-width: 200px;
   padding: 0;
   margin: 0;
 }
