@@ -45,7 +45,8 @@ body {
   margin: 0 auto;
   width: 1200px;
   display: flex;
-  flex-direction: column; /*разворачиваем главную ось */
+  flex-direction: column;
+  /*разворачиваем главную ось */
   background-color: #ffffff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
@@ -187,7 +188,7 @@ body {
   padding: 103px 85px;
 }
 
-.first-advantages-item .advantages-item{
+.first-advantages-item .advantages-item {
   padding: 80px 85px;
 }
 
@@ -456,18 +457,29 @@ body {
 .catalog-filter-group {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   text-transform: capitalize;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .catalog-filter-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.catalog-filter-item {
+  margin-bottom: 15px;
+}
+
+.catalog-filter-item:last-child {
+  margin-bottom: 0;
 }
 
 .control {
@@ -592,6 +604,15 @@ body {
 
 .button-add-active {
   background-color: #7db54f;
+}
+
+.raiting-hotel {
+  color: #333333;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*Pagination*/
