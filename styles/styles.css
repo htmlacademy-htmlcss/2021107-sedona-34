@@ -154,6 +154,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  margin: auto;
 }
 
 .navigation-user .navigation-item:nth-last-child(2) {
@@ -197,7 +198,6 @@ body {
 /*фоновое изображение основного логотипа страницы*/
 .page-main-logo-wrap {
   background-color: rgba(131, 179, 211, 0.2);
-  /*какой фон тут задать?*/
   color: #ffffff;
   background-image: url("../images/index/index-background.jpg");
   background-size: cover;
@@ -205,11 +205,23 @@ body {
   padding-top: 51px;
   padding-bottom: 82px;
   margin-bottom: 63px;
+  position: relative;
 }
 
 .page-main-logo {
   display: block;
   margin: 0 auto;
+}
+
+.page-main-logo-wrap::after {
+  content: "";
+  width: 1200px;
+  height: 57px;
+  background-image: url("../images/index/divider.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
 }
 
 .advantages {
@@ -287,6 +299,31 @@ body {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(3, 400px);
+}
+
+.advantages-city .advantages-example {
+  padding-top: 102px;
+}
+
+.advantages-example-housing {
+  background-image: url("../images/index/housing.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: top center;
+}
+
+.advantages-example-food {
+  background-image: url("../images/index/food.svg");
+  background-repeat: no-repeat;
+  background-size: 74px 70px;
+  background-position: top center;
+}
+
+.advantages-example-souvenir {
+  background-image: url("../images/index/souvenirs.svg");
+  background-repeat: no-repeat;
+  background-size: 64px 76px;
+  background-position: top center;
 }
 
 .advantages-card {
