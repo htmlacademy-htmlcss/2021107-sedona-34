@@ -477,16 +477,18 @@ body {
 /*FOOTER*/
 
 .page-footer {
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 45px;
+  padding-bottom: 35px;
 }
 
 .page-footer-container {
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-social {
   max-width: 170px;
+  /* align-self: baseline; */
 }
 
 .footer-social-list {
@@ -500,10 +502,25 @@ body {
 .footer-social-item {
   width: 48px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
 }
+
+/* .footer-social-link {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+} */
 
 .footer-contacts {
   max-width: 720px;
+
 }
 
 .footer-contacts-addres-phone {
@@ -517,7 +534,10 @@ body {
 }
 
 .footer-partner {
-  width: 115px;
+  align-self: center;
+  display: flex;
+  align-items: flex-end;
+  /* width: 115px; */
 }
 
 /* CATALOG.HTML */
