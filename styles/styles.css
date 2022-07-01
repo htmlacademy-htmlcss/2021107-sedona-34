@@ -71,24 +71,28 @@ body {
 }
 
 /* наведение мыши */
-.button:hover {
+/* .button:hover:not(.star):not(.raiting-hotel) {
   background-color: #615048;
-}
+  background-color: orange;
+} */
 
 /* клик (мышью или с клавиатуры) */
-button:active {
+/* button:active:not(.star):not(.raiting-hotel) {
   background-color: #756157;
+  background-color: red;
   color: rgba(255, 255, 255, 0.3);
-}
+} */
 
 /* ссылка выбрана при переключении с клавиатуры */
-button:focus {
+/* button:focus:not(.star):not(.raiting-hotel) {
   background-color: #615048;
-}
+  background-color: pink;
+} */
 
-.button:disabled {
+/* .button:disabled {
   background-color: #E5E5E5;
-}
+  background-color: paleturquoise;
+} */
 
 .page-title {
   font-weight: 700;
@@ -236,6 +240,19 @@ button:focus {
   position: relative;
   top: 14px;
   padding: 8px 34px 9px 34px;
+}
+
+.navigation-item .button:hover {
+  background-color: #615048;
+}
+
+.navigation-item .button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation-item .button:focus {
+  background-color: #615048;
 }
 
 /*main основное содержание*/
@@ -447,6 +464,22 @@ button:focus {
   padding: 12px 150px;
 }
 
+/* наведение мыши */
+.search-link:hover {
+  background-color: #615048;
+}
+
+/* клик (мышью или с клавиатуры) */
+.search-link:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ссылка выбрана при переключении с клавиатуры */
+.search-link:focus {
+  background-color: #615048;
+}
+
 /*фоновое изображение рассылки*/
 .subscribe {
   background-image: url("../images/index/background-subscribe.jpg");
@@ -508,10 +541,28 @@ button:focus {
   line-height: 36px;
   border: none;
   padding: 12px 34px;
-  /* padding-left: 35px;
-  padding-right: 36px; */
   margin: 0;
   border-radius: 0px 10px 10px 0px;
+}
+
+/* наведение мыши */
+.subscription-button:hover {
+  background-color: #68A2CA;
+}
+
+/* клик (мышью или с клавиатуры) */
+.subscription-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ссылка выбрана при переключении с клавиатуры */
+.subscription-button:focus {
+  background-color: #68A2CA;
+}
+
+.subscription-button:disabled {
+  background-color: #E5E5E5;
 }
 
 /*FOOTER*/
@@ -552,6 +603,25 @@ button:focus {
   padding: 11px;
 }
 
+.footer-social-link .social-icon {
+  fill: #83B3D3;
+}
+
+/* наведение мыши */
+.footer-social-link:hover .social-icon {
+  fill: #68A2CA;
+}
+
+/* клик (мышью или с клавиатуры) */
+.footer-social-link:active .social-icon {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+/* ссылка выбрана при переключении с клавиатуры */
+.footer-social-link:focus .social-icon {
+  fill: #68A2CA;
+}
+
 .footer-contacts {
   max-width: 720px;
 
@@ -567,11 +637,40 @@ button:focus {
   text-transform: uppercase;
 }
 
+/* наведение мыши */
+.footer-contacts-addres-phone:hover {
+    color: #756157;
+}
+
+/* клик (мышью или с клавиатуры) */
+.footer-contacts-addres-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+/* ссылка выбрана при переключении с клавиатуры */
+.footer-contacts-addres-phone:focus {
+  color: #756157;
+}
+
 .footer-partner {
   align-self: center;
   display: flex;
   align-items: flex-end;
-  /* width: 115px; */
+}
+
+/* наведение мыши */
+.footer-partner:hover .partner-icon {
+  fill: #756157;
+}
+
+/* клик (мышью или с клавиатуры) */
+.footer-partner:active .partner-icon {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+/* ссылка выбрана при переключении с клавиатуры */
+.footer-partner:focus .partner-icon {
+  fill: #756157;
 }
 
 /* CATALOG.HTML */
