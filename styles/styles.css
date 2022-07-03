@@ -978,6 +978,16 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 18px;
+  position: relative;
+}
+
+.hotel-list::before {
+  content:'';
+  position: absolute;
+  bottom: -66px;
+  height: 0;
+  width: 100%;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .hote-card-container {
