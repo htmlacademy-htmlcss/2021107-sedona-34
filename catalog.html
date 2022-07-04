@@ -65,10 +65,11 @@
               <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link" href="index.html">
-                    <svg class="breadcrumbs-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg">
+                    <svg class="breadcrumbs-icon" aria-hidden="true" focusable="false" width="13" height="13"
+                      viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="m.16 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z" /></svg>
+                        d="m.16 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z" />
+                    </svg>
                     <span class="visually-hidden">Главная страница</span>
                   </a>
                 </li>
@@ -144,16 +145,30 @@
                   <!-- Выбор диапазона -->
                   <fieldset class="catalog-filter-group range-price">
                     <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                    <label class="control">
-                      <span class="min-price">
-                        0 <span class="beginning-price">от</span>
-                      </span>
-                      <input class="catalog-range" type="range" name="dayscount" min="0" max="9000" step="1" />
-                      <span class="max-price">
-                        900 <span class="end-price">до</span>
-                      </span>
-                    </label>
+                    <div class="range-wrap-input">
+                      <div class="range-wrap-input-box">
+                        <label class="catalog-filter-label">
+                          <input class="range-input" type="number" value="0" name="min-price"> от
+                        </label>
+                      </div>
+                      <div class="range-wrap-input-box">
+                        <label class="catalog-filter-label">
+                          <input class="range-input" type="number" value="9000" name="max-price"> до
+                        </label>
+                      </div>
+                      <!-- <label class="control">
+                        <span class="min-price">
+                          0 <span class="beginning-price">от</span>
+                        </span>
+                        <input class="catalog-range" type="range" name="dayscount" min="0" max="9000" step="1" />
+                        <span class="max-price">
+                          900 <span class="end-price">до</span>
+                        </span>
+                      </label> -->
+                    </div>
                   </fieldset>
+
+
 
                   <div class="button-filter-wrap">
                     <button class="button button-sort" type="submit">
