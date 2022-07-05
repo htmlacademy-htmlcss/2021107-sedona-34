@@ -121,15 +121,17 @@ body {
 
 .navigation-logo {
   width: 139px;
-  margin-bottom: -10px;
+
   z-index: 1;
   margin-right: 30px;
-  /* display: block; */
+  display: block;
 }
 
-/* .page-header-logo {
+.page-header-logo {
   display: block;
-} */
+  margin-bottom: -10px;
+  /* добавить размеры картинки width 139; height: auto */
+}
 
 .navigation-list {
   margin: 0;
@@ -612,7 +614,7 @@ body {
 }
 
 .footer-social {
-  max-width: 170px;
+  max-width: 260px;
   /* align-self: baseline; */
 }
 
@@ -875,13 +877,14 @@ body {
 }
 
 /* почему не работает? */
-/* .range-wrap-input::before {
+.range-wrap-input::before {
+  content: "";
   width: 2px;
   height: 100%;
   background-color: #FFFFFF;
   position: absolute;
-  left: 50%;
-} */
+  left: 50px;
+}
 
 .range-wrap-input-box {
   width: 144px;
