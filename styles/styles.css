@@ -609,13 +609,14 @@ body {
 }
 
 .page-footer-container {
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: end;
 }
 
 .footer-social {
   max-width: 260px;
-  /* align-self: baseline; */
+  justify-self: start;
 }
 
 .footer-social-list {
@@ -632,7 +633,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: relative; */
 }
 
 .footer-social-link {
@@ -660,7 +660,7 @@ body {
 
 .footer-contacts {
   max-width: 720px;
-
+  justify-self: end;
 }
 
 .footer-contacts-addres-phone {
@@ -689,9 +689,7 @@ body {
 }
 
 .footer-partner {
-  align-self: center;
-  display: flex;
-  align-items: flex-end;
+  justify-self: end;
 }
 
 /* наведение мыши */
