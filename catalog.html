@@ -145,26 +145,32 @@
                   <!-- Выбор диапазона -->
                   <fieldset class="catalog-filter-group range-price">
                     <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                    <div class="range-wrap-input">
-                      <div class="range-wrap-input-box">
-                        <label class="catalog-filter-label">
-                          <input class="range-input" type="number" value="0" name="min-price"> от
-                        </label>
+                    <div class="range">
+                      <div class="range-wrap-input">
+                        <div class="range-wrap-input-box">
+                          <label class="catalog-filter-label">
+                            <input class="range-input" type="number" value="0" name="min-price" placeholder="0"> от
+                          </label>
+                        </div>
+                        <div class="range-wrap-input-box">
+                          <label class="catalog-filter-label">
+                            <input class="range-input" type="number" value="9000" name="max-price" placeholder="9000">
+                            до
+                          </label>
+                        </div>
                       </div>
-                      <div class="range-wrap-input-box">
-                        <label class="catalog-filter-label">
-                          <input class="range-input" type="number" value="9000" name="max-price"> до
-                        </label>
-                      </div>
-                      <!-- <label class="control">
-                        <span class="min-price">
-                          0 <span class="beginning-price">от</span>
-                        </span>
-                        <input class="catalog-range" type="range" name="dayscount" min="0" max="9000" step="1" />
-                        <span class="max-price">
-                          900 <span class="end-price">до</span>
-                        </span>
-                      </label> -->
+
+                        <div class="range-scale">
+                          <div class="range-bar" style="left: 0; right: 60px">
+                            <button class="range-toggle toggle-min">
+                              <span class="visually-hidden">Изменить минимальную цену.</span>
+                            </button>
+                            <button class="range-toggle toggle-max">
+                              <span class="visually-hidden">Изменить максимальную цену.</span>
+                            </button>
+                          </div>
+                        </div>
+
                     </div>
                   </fieldset>
 
