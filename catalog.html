@@ -91,24 +91,26 @@
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="infrastructure" value="swimming-pool"
-                            checked />
-
-                          Бассейн
+                          <input class="visually-hidden control-input" type="checkbox" name="infrastructure"
+                            value="swimming-pool" checked />
+                          <span class="control-mark"></span>
+                          <span class="control-label">Бассейн</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="infrastructure" value="parking" checked />
-
-                          Парковка
+                          <input class="visually-hidden control-input" type="checkbox" name="infrastructure"
+                            value="parking" checked />
+                          <span class="control-mark"></span>
+                          <span class="control-label">Парковка</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="infrastructure" value="Wi-Fi" />
-
-                          Wi-Fi
+                          <input class="visually-hidden control-input" type="checkbox" name="infrastructure"
+                            value="Wi-Fi" />
+                          <span class="control-mark"></span>
+                          <span class="control-label">Wi-Fi</span>
                         </label>
                       </li>
                     </ul>
@@ -120,23 +122,24 @@
                     <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="hotel" value="hotel" checked />
-
-                          Гостиница
+                          <input class="visually-hidden control-input" type="radio" name="hotel" value="hotel"
+                            checked />
+                          <span class="control-mark"></span>
+                          <span class="control-label">Гостиница</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="hotel" value="motel" />
-
-                          Мотель
+                          <input class="visually-hidden control-input" type="radio" name="hotel" value="motel" />
+                          <span class="control-mark"></span>
+                          <span class="control-label">Мотель</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
                         <label class="control">
-                          <input class="control-input" type="radio" name="hotel" value="apartments" />
-
-                          Апартаменты
+                          <input class="visually-hidden control-input" type="radio" name="hotel" value="apartments" />
+                          <span class="control-mark"></span>
+                          <span class="control-label">Апартаменты</span>
                         </label>
                       </li>
                     </ul>
@@ -196,11 +199,18 @@
           <!-- Сортировка результатов -->
           <div class="result-sorting inner-container">
             <p class="page-title result-quantity">Найдено гостиниц: 38</p>
-            <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешёвые</option>
-              <option value="expensive">Сначала дорогие</option>
-              <option value="popular">Сначала популярные</option>
-            </select>
+
+            <div class="select">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="cheap">Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
+              </select>
+              <svg class="select-arrow" width="12" height="9" viewBox="0 0 12 9" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m6.67 7.71 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0l-4.5 4.7-4.5-4.7c-.3-.3-.9-.3-1.2 0-.2.1-.3.4-.3.6 0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z" />
+              </svg>
+            </div>
 
             <a class="card-grid-toggle icon-table card-grid-toggle-active" href="#">
               <span class="visually-hidden">Показать плиткой</span>
@@ -213,7 +223,7 @@
             </a>
           </div>
 
-          <div class="inner-container">
+          <div class="inner-container inner-container-hotel">
             <ul class="hotel-list">
               <!-- 1 карточка -->
               <li class="hotel-card">
@@ -227,8 +237,7 @@
                   <span class="hotel-card-price room-price">От 4000 ₽</span>
                   <a class="hotel-card-button button" href="#">подробнее</a>
                   <a class="hotel-card-button button button-add" href="#">в избранное</a>
-                  <div class="hotel-card-star button hotel-card-star-4">
-                  </div>
+                  <div class="hotel-card-star button hotel-card-star-4"> </div>
                   <span class="button raiting-hotel">Рейтинг: 8,5</span>
                 </div>
               </li>
@@ -244,8 +253,7 @@
                   <span class="hotel-card-price room-price">От 5000 ₽</span>
                   <a class="hotel-card-button button" href="#">подробнее</a>
                   <a class="hotel-card-button button button-add-active" href="#">в избранное</a>
-                  <div class="hotel-card-star button hotel-card-star-4">
-                  </div>
+                  <div class="hotel-card-star button hotel-card-star-4"> </div>
                   <span class="button raiting-hotel">Рейтинг: 9,2</span>
                 </div>
               </li>
@@ -261,8 +269,7 @@
                   <span class="hotel-card-price room-price">От 2500 ₽</span>
                   <a class="hotel-card-button button" href="#">подробнее</a>
                   <a class="hotel-card-button button button-add" href="#">в избранное</a>
-                  <div class="hotel-card-star button hotel-card-star-3">
-                  </div>
+                  <div class="hotel-card-star button hotel-card-star-3"> </div>
                   <span class="button raiting-hotel">Рейтинг: 6,9</span>
                 </div>
               </li>
@@ -278,8 +285,7 @@
                   <span class="hotel-card-price room-price">От 1500 ₽</span>
                   <a class="hotel-card-button button" href="#">подробнее</a>
                   <a class="hotel-card-button button button-add" href="#">в избранное</a>
-                  <div class="hotel-card-star button hotel-card-star-2">
-                  </div>
+                  <div class="hotel-card-star button hotel-card-star-2"> </div>
                   <span class="button raiting-hotel">Рейтинг: 5,0</span>
                 </div>
               </li>
@@ -310,13 +316,54 @@
               </li>
             </ul>
 
+            <!-- <div class="select">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="cheap">Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
+              </select>
+              <svg class="select-arrow" width="12" height="9" viewBox="0 0 12 9" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m6.67 7.71 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0l-4.5 4.7-4.5-4.7c-.3-.3-.9-.3-1.2 0-.2.1-.3.4-.3.6 0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z" />
+                </svg>
+            </div> -->
+
+            <!-- .select-control {
+              font-family: "PT Sans", sans-serif;
+              box-sizing: border-box;
+              width: 100%;
+              color: #333333;
+              background-color: #ffffff;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 21px;
+              padding: 14px 14px;
+              padding-right: 50px;
+              border: 2px solid #E5E5E5;
+              border-radius: 4px;
+              /* убираю галочку у селекта */
+              appearance: none;
+              position: relative;
+              cursor: pointer;
+              /* убираю галочку у селекта */
+              appearance: none;
+              position: relative;
+              cursor: pointer;
+            } -->
+
             <div class="pagination-sorting">
               <p class="sum-hotel">Гостиниц на странице:</p>
-              <select class="select-pagination" aria-label="Количество отелей на странице">
-                <option value="4">4</option>
-                <option value="10">10</option>
-                <option value="20">20</option>
-              </select>
+              <div class="select">
+                <select class="select-pagination" aria-label="Количество отелей на странице">
+                  <option value="4">4</option>
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                </select>
+                <svg class="select-arrow" width="12" height="9" viewBox="0 0 12 9" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m6.67 7.71 5.1-5.3c.3-.3.3-.9 0-1.2-.3-.3-.9-.3-1.2 0l-4.5 4.7-4.5-4.7c-.3-.3-.9-.3-1.2 0-.2.1-.3.4-.3.6 0 .2.1.4.3.6l5.1 5.3c.3.4.9.4 1.2 0Z" />
+                </svg>
+              </div>
             </div>
           </div>
         </section>
