@@ -872,47 +872,48 @@ body {
 .range-wrap-input {
   display: flex;
   /* border: 2px solid #FFFFFF; */
-  box-shadow: inset 0 0 0 2px #ffffff;
-  border-radius: 4px;
+  /* box-shadow: inset 0 0 0 2px #ffffff;
+  border-radius: 4px; */
   position: relative;
   margin-bottom: 28px;
 }
 
 /* почему не работает? */
-.range-wrap-input::before {
+/* .range-wrap-input::before {
   content: "";
   width: 2px;
   height: 100%;
   background-color: #FFFFFF;
   position: absolute;
   left: 50px;
-}
+} */
 
 .range-wrap-input-box {
-  width: 144px;
+  width: 145px;
   box-sizing: border-box;
 }
 
-.range-wrap-input-box:first-child {
+/* .range-wrap-input-box:first-child {
   border-right: 1px solid #FFFFFF;
 }
 
 .range-wrap-input-box:last-child {
   border-left: 1px solid #FFFFFF;
-}
+} */
 
 .catalog-filter-label {
   display: flex;
   align-items: baseline;
-  width: 110px;
+  /* width: 110px; */
   justify-content: space-between;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* padding-right: 18px; */
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: right;
-  opacity: 0.3;
+  position: relative;
+  /* opacity: 0.3; */
 }
 
 /* .range-wrap-input-box::after {
@@ -920,7 +921,7 @@ body {
   height: 100%;
   border: 2px solid #FFFFFF;
   position: absolute; */
-  /* top: 0;
+/* top: 0;
   left: 0;
   bottom: 0;
   right: 0;
@@ -929,29 +930,49 @@ body {
 
 .range-input {
   width: 100%;
-  padding: 16px 18px;
-  padding-bottom: 17px;
-  padding-right: 0;
-  border: 0;
+  padding: 12px 18px;
+  padding-bottom: 9px;
+  padding-right: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
   color: #ffffff;
-  background-color: #000000;
+  background-color: transparent;
   cursor: pointer;
-  opacity: 0;
+  border: 2px solid #FFFFFF;
+  /* appearance: textfield; */
+}
+
+.range-input-min {
+  border-radius: 4px 0 0 4px;
+  border-right: 1px solid #FFFFFF;
+}
+
+.range-input-max {
+    border-radius: 0 4px 4px 0;
+  border-left: 1px solid #FFFFFF;
+}
+
+.range-input-text {
+  position: absolute;
+  right: 16px;
+  top: 25%;
+  opacity: 0.3;
 }
 
 
 .range-scale {
   position: relative;
   height: 4px;
-  background-color: #ffffff;
-  opacity: 0.3;
+  /* Прозрачность полоски */
+  background-color: rgba(256, 256, 256, 0.3);
 }
 
 .range-bar {
   position: absolute;
   height: 4px;
   background-color: #ffffff;
-  /* z-index: 1; */
 }
 
 .range-toggle {
