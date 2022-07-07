@@ -1112,15 +1112,11 @@ body {
   border-radius: 4px;
   /* убираю галочку у селекта */
   appearance: none;
-  position: relative;
   cursor: pointer;
+  background-image: url("../images/catalog/arrow-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 22px center;
 }
-
-.select-arrow {
-  position: absolute;
-  right: 20px;
-}
-
 .card-grid-toggle {
   width: 48px;
   height: 48px;
@@ -1392,8 +1388,10 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   appearance: none;
-  position: relative;
   cursor: pointer;
+  background-image: url("../images/catalog/arrow-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 22px center;
 }
 
 .sum-hotel {
