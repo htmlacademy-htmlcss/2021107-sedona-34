@@ -246,15 +246,44 @@
             <div class="field-group">
               <label class="modal-description-filter" for="start-time">Дата заезда:</label>
               <input class="description-form-field field" type="text" id="start-time" name="start-time"
-                placeholder="27 апреля 2020">
+                value="27 апреля 2020">
               <p class="modal-field-hint">Мы не можем отправить вас в прошлое.</p>
             </div>
-            <div class="field-group">
+            <div class="field-group  modal-count-people">
               <label class="modal-description-filter" for="over-time">Дата выезда:</label>
               <input class="description-form-field field" type="text" id="over-time" name="over-time"
-                placeholder="1 сентября 2021">
+              value="1 сентября 2021">
               <p class="modal-field-hint">На эти даты есть свободные номера. Пока есть.</p>
             </div>
+
+            <div class="field-group adults-people">
+              <label class="modal-description-filter" for="adults-people">Взрослые:</label>
+              <div class="wrap-modal-count-button">
+                <button class="modal-count-button" type="submit">
+                  <span class="visually-hidden">Убавить</span>
+                </button>
+                <input class="description-form-field field" type="number" id="adults-people" name="adults-people"
+                value="2">
+                <button class="modal-count-button" type="submit">
+                  <span class="visually-hidden">Прибавить</span>
+                </button>
+              </div>
+
+
+              <label class="modal-description-filter" for="children-people">Дети:</label>
+              <div class="wrap-modal-count-button">
+                <button class="modal-count-button">
+                  <span class="visually-hidden" type="submit">Убавить</span>
+                </button>
+                <input class="description-form-field field" type="number" id="children-people" name="children-people"
+                value="1">
+                <button class="modal-count-button" type="submit">
+                  <span class="visually-hidden">Прибавить</span>
+                </button>
+              </div>
+
+            </div>
+            <a class="button modal-button-search" href="#">Найти</a>
           </form>
 
         </section>

@@ -671,6 +671,7 @@ body {
   fill: #756157;
 }
 
+/* modal */
 .modal-container {
   position: fixed;
   top: 0;
@@ -703,10 +704,6 @@ body {
 }
 
 .modal-close-button {
-  /* position: absolute;
-  padding: 0;
-  top: 0;
-  right: 0; */
   width: 53px;
   height: 53px;
   border-radius: 50%;
@@ -720,7 +717,7 @@ body {
 
 .modal-title {
   margin: 0;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -735,10 +732,111 @@ body {
 }
 
 .modal-description-filter {
-  grid-row: 1 / 3;
-
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
 }
 
+.description-form-field {
+  border: none;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.modal-field-hint {
+  grid-column: 2 / 3;
+  color: #333333;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.adults-people {
+  display: grid;
+  grid-template-columns: 1fr 133px 1fr 133px;
+  justify-items: center;
+  align-items: center;
+}
+
+.adults-people .modal-description-filter {
+  justify-self: start;
+}
+
+.wrap-modal-count-button {
+  display: flex;
+  position: relative;
+}
+
+.modal-count-button {
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 25%;
+}
+
+.modal-count-button:first-of-type {
+  left: 0;
+}
+
+.modal-count-button:first-of-type::before,
+.modal-count-button:last-of-type::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 1px;
+  left: 25%;
+  /* transform: scaleX(-50%); */
+  background-color: #000000;
+  opacity: 0.3;
+}
+
+.modal-count-button:last-of-type {
+  right: 0;
+}
+
+.modal-count-button:last-of-type::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 1px;
+  left: 25%;
+  transform: rotate(90deg);
+  background-color: #000000;
+  opacity: 0.3;
+}
+
+.adults-people .description-form-field {
+  display: inline-block;
+  width: 133px;
+  padding: 14px 0;
+  text-align: center;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  appearance: textfield;
+}
+
+/* Убираем кнопки +/- у числового поля. */
+.description-form-field::-webkit-outer-spin-button,
+.description-form-field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.modal-button-search {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 26px;
+  background-color: #83B3D3;
+  border-radius: 10px;
+}
 
 /* CATALOG.HTML */
 
@@ -942,12 +1040,11 @@ body {
   margin-right: auto;
 }
 
-.control-radio-input:focus .control-mark {
+.control-input:focus+.control-mark {
   box-shadow: inset 0 0 0 3px #83B3D3;
 }
 
-/* не работает!!! */
-.control-radio-input:checked:focus .control-mark {
+.control-input:checked:focus+.control-mark {
   box-shadow: 0 0 0 3px #83B3D3;
 }
 
