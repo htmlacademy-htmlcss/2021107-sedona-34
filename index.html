@@ -232,7 +232,7 @@
       </footer>
     </div>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-search">
         <div class="modal-title-wrap">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -247,15 +247,15 @@
               <label class="modal-description-filter" for="start-time">Дата заезда:</label>
               <input class="description-form-field field" type="text" id="start-time" name="start-time"
                 value="27 апреля 2020">
-                <button class="modal-button-calendar" type="button">
-                  <span class="visually-hidden">Календарь выбора дат</span>
-                </button>
+              <button class="modal-button-calendar" type="button">
+                <span class="visually-hidden">Календарь выбора дат</span>
+              </button>
               <p class="modal-field-hint modal-field-hint-allert">Мы не можем отправить вас в прошлое.</p>
             </div>
             <div class="field-group  modal-count-people">
               <label class="modal-description-filter" for="over-time">Дата выезда:</label>
               <input class="description-form-field field" type="text" id="over-time" name="over-time"
-              value="1 сентября 2021">
+                value="1 сентября 2021">
               <button class="modal-button-calendar" type="button">
                 <span class="visually-hidden">Календарь выбора дат</span>
               </button>
@@ -269,20 +269,27 @@
                   <span class="visually-hidden">Убавить</span>
                 </button>
                 <input class="description-form-field field" type="number" id="adults-people" name="adults-people"
-                value="2">
+                  value="2">
                 <button class="modal-count-button" type="button">
                   <span class="visually-hidden">Прибавить</span>
                 </button>
               </div>
 
-
-              <label class="modal-description-filter" for="children-people">Дети:</label>
+              <span class="modal-description-filter form-toltip-icon">
+                <label class="modal-description-filter" for="children-people">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+              </span>
               <div class="wrap-modal-count-button">
                 <button class="modal-count-button">
                   <span class="visually-hidden" type="button">Убавить</span>
                 </button>
                 <input class="description-form-field field" type="number" id="children-people" name="children-people"
-                value="1">
+                  value="1">
                 <button class="modal-count-button" type="button">
                   <span class="visually-hidden">Прибавить</span>
                 </button>
