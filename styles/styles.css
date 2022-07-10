@@ -741,7 +741,7 @@ body {
 
 /* клик (мышью или с клавиатуры) */
 .modal-close-button:active {
-  background-color: E6E6E6;
+  background-color: #E6E6E6;
   background-image: url("../images/modal/close-activ.svg");
 }
 
@@ -752,7 +752,9 @@ body {
 }
 
 .modal-title {
+  max-width: 500px;
   margin: 0;
+  margin-right: auto;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -760,6 +762,7 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
+  overflow-wrap: break-word;
 }
 
 .field-group {
@@ -863,6 +866,7 @@ body {
 
 .modal-description-filter[for="adults-people"] {
   justify-self: start;
+  overflow-wrap: break-word;
 }
 
 .modal-description-filter[for="children-people"] {
@@ -1200,6 +1204,7 @@ body {
 
 .catalog-filter-wrap {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog-filter-group {
@@ -1510,6 +1515,7 @@ body {
 /* Сортировка результатов */
 .result-sorting {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding-top: 52px;
   padding-bottom: 56px;
@@ -1666,6 +1672,7 @@ body {
   line-height: 28px;
   color: #000000;
   text-decoration: none;
+  overflow-wrap: break-word;
 }
 
 .hotel-card-price {
@@ -1673,6 +1680,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  overflow-wrap: break-word;
 }
 
 .hotel-card-button:hover {
@@ -1815,6 +1823,7 @@ body {
 
 .pagination-sorting {
   display: flex;
+  flex-wrap: wrap;
   max-width: 400px;
   font-weight: 400;
   font-size: 18px;
