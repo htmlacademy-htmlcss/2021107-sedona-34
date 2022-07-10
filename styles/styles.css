@@ -684,7 +684,6 @@ body {
 }
 
 .modal {
-  /* position: relative; */
   margin: auto;
   margin-top: 396px;
   padding: 54px 70px 70px;
@@ -693,6 +692,7 @@ body {
 
 .modal-search {
   width: 715px;
+  box-sizing: border-box;
   border-radius: 30px;
 }
 
@@ -729,6 +729,13 @@ body {
 .field-group {
   display: grid;
   grid-template-columns: 1fr 420px;
+  align-items: baseline;
+  margin-bottom: 11px;
+  position: relative;
+}
+
+.field-group:last-of-type {
+  margin-bottom: 32px;
 }
 
 .modal-description-filter {
@@ -746,9 +753,29 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  background: #F2F2F2;
+  border-radius: 4px;
+  padding: 14px 20px;
+  margin-bottom: 9px;
+}
+
+.modal-button-calendar {
+  border: none;
+  padding: 20px;
+  position: absolute;
+  background-image: url("../images/modal/date.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  right: 7px;
+  top: 5px;
+  cursor: pointer;
+
 }
 
 .modal-field-hint {
+  margin: 0;
   grid-column: 2 / 3;
   color: #333333;
   font-style: normal;
@@ -757,14 +784,18 @@ body {
   line-height: 21px;
 }
 
+.modal-field-hint-allert {
+  color: #FF5757;
+}
+
 .adults-people {
   display: grid;
   grid-template-columns: 1fr 133px 1fr 133px;
   justify-items: center;
-  align-items: center;
+  align-items: baseline;
 }
 
-.adults-people .modal-description-filter {
+.modal-description-filter[for="adults-people"] {
   justify-self: start;
 }
 
@@ -774,16 +805,18 @@ body {
 }
 
 .modal-count-button {
+  padding: 20px;
   border: none;
   border-radius: 4px;
   position: absolute;
   width: 25px;
   height: 25px;
-  top: 25%;
+  top: 7%;
+  cursor: pointer;
 }
 
 .modal-count-button:first-of-type {
-  left: 0;
+  left: 9px;
 }
 
 .modal-count-button:first-of-type::before,
@@ -793,13 +826,12 @@ body {
   width: 13px;
   height: 1px;
   left: 25%;
-  /* transform: scaleX(-50%); */
   background-color: #000000;
   opacity: 0.3;
 }
 
 .modal-count-button:last-of-type {
-  right: 0;
+  right: 2px;
 }
 
 .modal-count-button:last-of-type::after {
