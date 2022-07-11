@@ -1242,6 +1242,26 @@ body {
   border-radius: 4px;
 }
 
+/* radio */
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+  content: "";
+}
+
+/* checkbox */
 .control-input[type="checkbox"]:checked + .control-mark {
   background-image: url("../images/catalog/check-box.svg");
   background-repeat: no-repeat;
@@ -1260,24 +1280,6 @@ body {
 .control:focus:not(.type-housing .control) .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 0 0 3px #83b3d3;
-}
-
-/* Radio */
-.control-input[type="radio"] + .control-mark {
-  border-radius: 50%;
-}
-
-.control-input[type="radio"]:checked + .control-mark::before {
-  position: absolute;
-  left: 25%;
-  right: 25%;
-  top: 25%;
-  bottom: 25%;
-  width: 10px;
-  height: 10px;
-  background-color: #3f5e72;
-  border-radius: 50%;
-  content: "";
 }
 
 .infrastructure {
