@@ -123,6 +123,10 @@ body {
   max-width: 280px;
 }
 
+/* .navigation-item {
+  padding-bottom: 4px;
+} */
+
 .navigation .navigation-item {
   padding: 0 7px;
 }
@@ -331,6 +335,10 @@ body {
   background-color: #82b3d3;
 }
 
+.advantages-img {
+  align-self: center;
+}
+
 .first-advantages-item .advantages-img {
   grid-column: 2 / -1;
 }
@@ -428,6 +436,7 @@ body {
 }
 
 .search-link {
+  max-width: 600px;
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
@@ -534,6 +543,7 @@ body {
 }
 
 .subscription-button {
+  max-width: 300px;
   background-color: #82b3d3;
   font-size: 20px;
   line-height: 36px;
@@ -1477,6 +1487,7 @@ body {
 }
 
 .button-reset {
+  max-width: 160px;
   font-weight: 400;
   color: #ffffff;
   background-color: transparent;
@@ -1504,6 +1515,7 @@ body {
 .result-sorting {
   display: flex;
   flex-wrap: wrap;
+  justify-content: end;
   align-items: center;
   padding-top: 52px;
   padding-bottom: 56px;
@@ -1769,6 +1781,10 @@ body {
   align-items: center;
 }
 
+.pagination-item {
+  margin-bottom: 8px;
+}
+
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -1778,8 +1794,8 @@ body {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   background-color: #82b3d3;
   color: #ffffff;
   font-weight: 700;
