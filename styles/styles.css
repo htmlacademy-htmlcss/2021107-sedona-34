@@ -23,6 +23,7 @@ body {
   margin: 0;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
@@ -123,10 +124,6 @@ body {
   max-width: 280px;
 }
 
-/* .navigation-item {
-  padding-bottom: 4px;
-} */
-
 .navigation .navigation-item {
   padding: 0 7px;
 }
@@ -206,7 +203,7 @@ body {
   position: absolute;
   left: 24px;
   top: 15px;
-  background-color: ##7db54f;
+  background-color: #7db54f;
   min-width: 20px;
   height: 20px;
   padding: 3px 2px;
@@ -215,7 +212,7 @@ body {
 
 .navigation-item .button {
   position: relative;
-  top: 14px;
+  margin-top: 14px;
   padding: 8px 34px 9px 34px;
 }
 
@@ -274,7 +271,7 @@ body {
 .advantages-lead-text {
   text-align: center;
   text-transform: uppercase;
-  max-width: 620px;
+  max-width: 640px;
   margin: 0 auto;
   margin-bottom: 31px;
 }
@@ -304,7 +301,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 103px 85px;
+  padding: 103px 84px;
 }
 
 .first-advantages-item .advantages-item {
@@ -394,6 +391,7 @@ body {
 }
 
 .advantages-description {
+  font-style: normal;
   font-weight: 400;
   color: #333333;
   font-size: 18px;
@@ -1201,6 +1199,8 @@ body {
 .catalog-filter-wrap {
   display: flex;
   flex-wrap: wrap;
+  /* кнопки привязаны к левому краю */
+  justify-content: flex-end;
 }
 
 .catalog-filter-group {
@@ -1605,7 +1605,6 @@ body {
 
 .card-grid-toggle-active {
   box-shadow: inset 0 0 0 2px #000000;
-  /* border: 2px solid #000000; */
 }
 
 /* наведение мыши */
@@ -1768,7 +1767,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
-  padding-bottom: 25px;
+  padding-bottom: 16px;
 }
 
 .pagination {
@@ -1838,6 +1837,8 @@ body {
 .pagination-sorting .select {
   min-width: 160px;
   margin: 0;
+  align-self: baseline;
+  margin-top: 3px;
 }
 
 .select-pagination {
