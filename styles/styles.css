@@ -65,9 +65,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   border: none;
-  padding: 15px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 15px;
   border-radius: 4px;
 }
 
@@ -121,7 +119,7 @@ body {
 
 .navigation-user {
   /* небольшой запас в размере */
-  max-width: 280px;
+  min-width: 264px;
 }
 
 .navigation .navigation-item {
@@ -146,16 +144,16 @@ body {
   fill: #756157;
 }
 
-/* клик (мышью или с клавиатуры) */
-.navigation-link:active {
-  color: rgba(117, 97, 87, 0.3);
-  fill: rgba(117, 97, 87, 0.3);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .navigation-link:focus {
   color: #756157;
   fill: #756157;
+}
+
+/* клик (мышью или с клавиатуры) */
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-link-current::before {
@@ -220,13 +218,13 @@ body {
   background-color: #615048;
 }
 
+.navigation-item .button:focus {
+  background-color: #615048;
+}
+
 .navigation-item .button:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.navigation-item .button:focus {
-  background-color: #615048;
 }
 
 /*main основное содержание*/
@@ -242,8 +240,7 @@ body {
   background-image: url("../images/index/index-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 51px;
-  padding-bottom: 82px;
+  padding: 51px 0 82px 0;
   margin-bottom: 63px;
   position: relative;
 }
@@ -272,8 +269,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   max-width: 640px;
-  margin: 0 auto;
-  margin-bottom: 31px;
+  margin: 0 auto 31px;
 }
 
 .advantages-text {
@@ -281,8 +277,7 @@ body {
   text-align: center;
   font-weight: 400;
   max-width: 660px;
-  margin: 0 auto;
-  margin-bottom: 90px;
+  margin: 0 auto 90px;
 }
 
 /*Карточки преимуществ*/
@@ -332,12 +327,18 @@ body {
   background-color: #82b3d3;
 }
 
-.advantages-img {
-  align-self: center;
+.advantages-img-wrap {
+  display: flex;
+  align-items: center;
+  background-color: #82b3d3;
 }
 
-.first-advantages-item .advantages-img {
+.first-advantages-item .advantages-img-wrap {
   grid-column: 2 / -1;
+}
+
+.advantages-img {
+  display: block;
 }
 
 .advantages-city {
@@ -378,16 +379,14 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 }
 
 .advantages-number {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 }
 
 .advantages-description {
@@ -421,16 +420,14 @@ body {
 .search-title {
   text-transform: uppercase;
   max-width: 600px;
-  margin: 0 auto;
-  margin-bottom: 29px;
+  margin: 0 auto 29px;
 }
 
 .search-description {
   font-weight: 400;
   color: #333333;
   max-width: 600px;
-  margin: 0 auto;
-  margin-bottom: 55px;
+  margin: 0 auto 55px;
 }
 
 .search-link {
@@ -446,15 +443,15 @@ body {
   background-color: #615048;
 }
 
+/* ссылка выбрана при переключении с клавиатуры */
+.search-link:focus {
+  background-color: #615048;
+}
+
 /* клик (мышью или с клавиатуры) */
 .search-link:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
-}
-
-/* ссылка выбрана при переключении с клавиатуры */
-.search-link:focus {
-  background-color: #615048;
 }
 
 /*фоновое изображение рассылки*/
@@ -466,22 +463,19 @@ body {
   background-color: #000000;
   color: #ffffff;
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 
 .subscribe-title {
   text-transform: uppercase;
   max-width: 475px;
-  margin: 0 auto;
-  margin-bottom: 29px;
+  margin: 0 auto 29px;
 }
 
 .subscribe-description {
   font-weight: 400;
   max-width: 475px;
-  margin: 0 auto;
-  margin-bottom: 46px;
+  margin: 0 auto 46px;
 }
 
 .subscribe-form-wrap {
@@ -503,23 +497,29 @@ body {
 .subscribe-description-label input {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 22px;
   border: none;
   width: 100%;
   height: 100%;
   border-radius: 10px 0 0 10px;
-  padding-left: 22px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  opacity: 0.6;
+  background-color: #f2f2f2;
 }
 
 /* наведение мыши */
 .subscribe-description-label input:hover {
   background-color: #e6e6e6;
+}
+
+/* ссылка выбрана при переключении с клавиатуры */
+.subscribe-description-label input:focus {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
 }
 
 /* клик (мышью или с клавиатуры) */
@@ -529,19 +529,13 @@ body {
   outline: 2px solid #000000;
 }
 
-/* ссылка выбрана при переключении с клавиатуры */
-.subscribe-description-label input:focus {
-  background-color: #e6e6e6;
-  box-shadow: 0 0 0 3px #83b3d3;
-}
-
 .subscribe-description-label input:disabled {
   box-shadow: inset 0 0 0 2px #ff0000;
   pointer-events: none;
 }
 
 .subscription-button {
-  max-width: 300px;
+  min-width: 200px;
   background-color: #82b3d3;
   font-size: 20px;
   line-height: 36px;
@@ -556,15 +550,15 @@ body {
   background-color: #68a2ca;
 }
 
+/* ссылка выбрана при переключении с клавиатуры */
+.subscription-button:focus {
+  background-color: #68a2ca;
+}
+
 /* клик (мышью или с клавиатуры) */
 .subscription-button:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
-}
-
-/* ссылка выбрана при переключении с клавиатуры */
-.subscription-button:focus {
-  background-color: #68a2ca;
 }
 
 .subscription-button:disabled {
@@ -575,8 +569,7 @@ body {
 /*FOOTER*/
 
 .page-footer {
-  padding-top: 45px;
-  padding-bottom: 35px;
+  padding: 45px 0 35px;
 }
 
 .page-footer-container {
@@ -619,14 +612,14 @@ body {
   fill: #68a2ca;
 }
 
-/* клик (мышью или с клавиатуры) */
-.footer-social-link:active .social-icon {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .footer-social-link:focus .social-icon {
   fill: #68a2ca;
+}
+
+/* клик (мышью или с клавиатуры) */
+.footer-social-link:active .social-icon {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-contacts {
@@ -649,14 +642,14 @@ body {
   color: #756157;
 }
 
-/* клик (мышью или с клавиатуры) */
-.footer-contacts-addres-phone:active {
-  color: rgba(117, 97, 87, 0.3);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .footer-contacts-addres-phone:focus {
   color: #756157;
+}
+
+/* клик (мышью или с клавиатуры) */
+.footer-contacts-addres-phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .footer-partner {
@@ -668,14 +661,14 @@ body {
   fill: #756157;
 }
 
-/* клик (мышью или с клавиатуры) */
-.footer-partner:active .partner-icon {
-  fill: rgba(117, 97, 87, 0.3);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .footer-partner:focus .partner-icon {
   fill: #756157;
+}
+
+/* клик (мышью или с клавиатуры) */
+.footer-partner:active .partner-icon {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* modal */
@@ -696,8 +689,7 @@ body {
 }
 
 .modal {
-  margin: auto;
-  margin-top: 396px;
+  margin:auto;
   padding: 54px 70px 70px;
   background-color: #ffffff;
 }
@@ -733,22 +725,22 @@ body {
   background-color: #e6e6e6;
 }
 
+/* ссылка выбрана при переключении с клавиатуры */
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
 /* клик (мышью или с клавиатуры) */
 .modal-close-button:active {
   background-color: #e6e6e6;
   background-image: url("../images/modal/close-activ.svg");
 }
 
-/* ссылка выбрана при переключении с клавиатуры */
-.modal-close-button:focus {
-  background-color: #e6e6e6;
-  box-shadow: 0 0 0 3px #83b3d3;
-}
-
 .modal-title {
   max-width: 500px;
-  margin: 0;
-  margin-right: auto;
+  margin: 0 auto 0 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -797,6 +789,13 @@ body {
   background-color: #e6e6e6;
 }
 
+/* ссылка выбрана при переключении с клавиатуры */
+.description-form-field:focus {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
+}
+
 /* клик (мышью или с клавиатуры) */
 .description-form-field:active {
   background-color: #ffffff;
@@ -804,13 +803,6 @@ body {
   outline: 2px solid #000000;
   border-radius: 4px;
 }
-
-/* ссылка выбрана при переключении с клавиатуры */
-.description-form-field:focus {
-  background-color: #e6e6e6;
-  box-shadow: 0 0 0 3px #83b3d3;
-}
-
 
 .modal-button-calendar {
   border: none;
@@ -923,16 +915,16 @@ body {
   background-color: #000000;
 }
 
-/* клик (мышью или с клавиатуры) */
-.modal-count-button:active::before,
-.modal-count-button:active::after {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .modal-count-button:focus::before,
 .modal-count-button:focus::after {
   background-color: #000000;
+}
+
+/* клик (мышью или с клавиатуры) */
+.modal-count-button:active::before,
+.modal-count-button:active::after {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* ссылка выбрана при переключении с клавиатуры */
@@ -941,16 +933,17 @@ body {
   top: 20%;
   border-radius: 4px;
   box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
 }
 
 /* ссылка выбрана при переключении с клавиатуры */
 .modal-count-button:first-of-type:focus {
-  left: 15px;
+  left: 13px;
 }
 
 /* ссылка выбрана при переключении с клавиатуры */
 .modal-count-button:last-of-type:focus {
-  right: 12px;
+  right: 13px;
 }
 
 .adults-people .description-form-field {
@@ -969,6 +962,12 @@ body {
   background-color: #e6e6e6;
 }
 
+/* ссылка выбрана при переключении с клавиатуры */
+.adults-people .description-form-field:focus {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
 /* клик (мышью или с клавиатуры) */
 .adults-people .description-form-field:active {
   background-color: #ffffff;
@@ -976,13 +975,6 @@ body {
   outline: 2px solid #000000;
   border-radius: 4px;
 }
-
-/* ссылка выбрана при переключении с клавиатуры */
-.adults-people .description-form-field:focus {
-  background-color: #e6e6e6;
-  box-shadow: 0 0 0 3px #83b3d3;
-}
-
 
 /* Убираем кнопки +/- у числового поля. */
 .description-form-field::-webkit-outer-spin-button,
@@ -1011,16 +1003,17 @@ body {
   background-color: #68a2ca;
 }
 
-/* клик (мышью или с клавиатуры) */
-.modal-button-search:active {
-  background-color: #68a2ca;
-  color: rgba(256, 256, 256, 0.3);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .modal-button-search:focus {
   background-color: #68a2ca;
   box-shadow: inset 0 0 0 3px #756257;
+  outline: none;
+}
+
+/* клик (мышью или с клавиатуры) */
+.modal-button-search:active {
+  background-color: #68a2ca;
+  color: rgba(256, 256, 256, 0.3);
 }
 
 /* tooltip */
@@ -1030,8 +1023,7 @@ body {
 
 .tooltip {
   position: absolute;
-  margin-left: 83px;
-  margin-top: -23px;
+  margin: -23px 0 0 83px;
   width: 25px;
   height: 25px;
 }
@@ -1066,9 +1058,7 @@ body {
   line-height: 21px;
   font-weight: 400;
   text-transform: none;
-  padding: 15px 22px;
-  padding-right: 18px;
-  padding-bottom: 22px;
+  padding: 15px 18px 22px 22px;
   width: 256px;
   position: relative;
   top: 16px;
@@ -1092,8 +1082,7 @@ body {
   bottom: 100%;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
 }
 
 
@@ -1110,8 +1099,7 @@ body {
   background-position: center;
   background-color: #000000;
   color: #ffffff;
-  padding-top: 34px;
-  padding-bottom: 70px;
+  padding: 34px 0 70px;
 }
 
 .wrap-sort {
@@ -1119,21 +1107,19 @@ body {
 }
 
 .inner-header-title {
-  margin: 0;
-  margin-bottom: 5px;
+  margin: 0 0 5px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
 }
 
 .breadcrumbs {
-  margin: 0;
+  margin: 0 0 40px;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  margin-bottom: 40px;
 }
 
 .breadcrumbs-item {
@@ -1173,14 +1159,14 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* клик (мышью или с клавиатуры) */
-.breadcrumbs-link:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .breadcrumbs-link:focus {
   color: #ffffff;
+}
+
+/* клик (мышью или с клавиатуры) */
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* наведение мыши */
@@ -1188,14 +1174,14 @@ body {
   fill: rgba(255, 255, 255, 0.6);
 }
 
-/* клик (мышью или с клавиатуры) */
-.breadcrumbs-link:active .breadcrumbs-icon {
-  fill: rgba(255, 255, 255, 0.3);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .breadcrumbs-link:focus .breadcrumbs-icon {
   fill: #ffffff;
+}
+
+/* клик (мышью или с клавиатуры) */
+.breadcrumbs-link:active .breadcrumbs-icon {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-filter-wrap {
@@ -1285,13 +1271,13 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control:active:not(.type-housing .control) .control-mark {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
 .control:focus:not(.type-housing .control) .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 0 0 3px #83b3d3;
+}
+
+.control:active:not(.type-housing .control) .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .infrastructure {
@@ -1346,9 +1332,7 @@ body {
 
 .range-input {
   width: 100%;
-  padding: 12px 18px;
-  padding-bottom: 9px;
-  padding-right: 30px;
+  padding: 12px 30px 9px 18px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1398,15 +1382,15 @@ body {
   border-left: 1px solid rgba(256, 256, 256, 0.6);
 }
 
+.catalog-filter-label .range-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #81b3d2,
+    inset 0 0 0 3px #81b3d2
+}
+
 .catalog-filter-label:active .range-input {
   background-color: #756257;
 }
-
-.catalog-filter-label:focus .range-input {
-  box-shadow: 0 0 0 3px #81b3d2,
-    inset 0 0 0 3px #81b3d2;
-}
-
 
 .range-scale {
   position: relative;
@@ -1437,11 +1421,14 @@ body {
 }
 
 .range-toggle:focus {
-  outline: 3px solid #83b3d3;
+  box-shadow:  0 0 0 3px #83b3d3,
+  0 0 4px 10px rgba(0, 0, 0, 0.25);
+  outline: none;
 }
 
 .range-toggle:active {
   outline: 2px solid #83b3d3;
+  box-shadow: 0 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .toggle-min {
@@ -1474,15 +1461,16 @@ body {
   background-color: #68a2ca;
 }
 
+/* ссылка выбрана при переключении с клавиатуры */
+.button-sort:focus {
+  background-color: #68a2ca;
+  outline: none;
+}
+
 /* клик (мышью или с клавиатуры) */
 .button-sort:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
-}
-
-/* ссылка выбрана при переключении с клавиатуры */
-.button-sort:focus {
-  background-color: #68a2ca;
 }
 
 .button-sort:disabled {
@@ -1505,13 +1493,14 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* клик (мышью или с клавиатуры) */
-.button-reset:active {
-  outline: 3px solid #83b3d3;
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .button-reset:focus {
+  outline: 3px solid #83b3d3;
+
+}
+
+/* клик (мышью или с клавиатуры) */
+.button-reset:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1521,15 +1510,13 @@ body {
   flex-wrap: wrap;
   justify-content: end;
   align-items: center;
-  padding-top: 52px;
-  padding-bottom: 56px;
+  padding: 52px 0 56px;
 }
 
 .result-quantity {
   text-transform: uppercase;
   max-width: 370px;
-  margin: 0;
-  margin-right: auto;
+  margin: 0 auto 0 0;
 }
 
 .select {
@@ -1549,8 +1536,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  padding: 14px 14px;
-  padding-right: 50px;
+  padding: 14px 50px 14px 14px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   /* убираю галочку у селекта */
@@ -1566,12 +1552,12 @@ body {
   border: 2px solid #68a2ca;
 }
 
-.select-control:active {
-  border: 2px solid #3f5e72;
-}
-
 .select-control:focus {
   border: 2px solid #68a2ca;
+}
+
+.select-control:active {
+  border: 2px solid #3f5e72;
 }
 
 .select-control:disabled {
@@ -1617,14 +1603,15 @@ body {
   box-shadow: inset 0 0 0 2px #000000;
 }
 
-/* клик (мышью или с клавиатуры) */
-.card-grid-toggle:active {
-  box-shadow: inset 0 0 0 2px #000000;
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .card-grid-toggle:focus {
   box-shadow: inset 0 0 0 2px #68a2ca;
+  outline: none;
+}
+
+/* клик (мышью или с клавиатуры) */
+.card-grid-toggle:active {
+  box-shadow: inset 0 0 0 2px #000000;
 }
 
 /* Карточки отелей */
@@ -1691,13 +1678,13 @@ body {
   background-color: #615048;
 }
 
+.hotel-card-button:focus {
+  background-color: #615048;
+}
+
 .hotel-card-button:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.hotel-card-button:focus {
-  background-color: #615048;
 }
 
 .button-add {
@@ -1708,13 +1695,13 @@ body {
   background-color: #68a2ca;
 }
 
+.button-add:focus {
+  background-color: #68a2ca;
+}
+
 .button-add:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.button-add:focus {
-  background-color: #68a2ca;
 }
 
 .button-add-active {
@@ -1725,13 +1712,13 @@ body {
   background-color: #6c9e42;
 }
 
+.button-add-active:focus {
+  background-color: #6c9e42;
+}
+
 .button-add-active:active {
   background-color: #7db54f;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.button-add-active:focus {
-  background-color: #6c9e42;
 }
 
 .hotel-card-star {
@@ -1771,8 +1758,7 @@ body {
 .pagination-wrap {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 16px;
+  padding: 30px 0 16px;
 }
 
 .pagination {
@@ -1815,13 +1801,13 @@ body {
   background-color: #68a2ca;
 }
 
+.pagination-link:focus:not(.pagination-link-current) {
+  background-color: #68a2ca;
+}
+
 .pagination-link:active:not(.pagination-link-current) {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.pagination-link:focus:not(.pagination-link-current) {
-  background-color: #68a2ca;
 }
 
 .pagination-link-current {
@@ -1841,9 +1827,8 @@ body {
 
 .pagination-sorting .select {
   min-width: 160px;
-  margin: 0;
+  margin: 3px 0 0;
   align-self: baseline;
-  margin-top: 3px;
 }
 
 .select-pagination {
@@ -1855,8 +1840,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  padding: 14px 14px;
-  padding-right: 50px;
+  padding: 14px 50px 14px 14px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   -webkit-appearance: none;
@@ -1871,12 +1855,12 @@ body {
   border: 2px solid #68a2ca;
 }
 
-.select-pagination:active {
-  border: 2px solid #3f5e72;
-}
-
 .select-pagination:focus {
   border: 2px solid #68a2ca;
+}
+
+.select-pagination:active {
+  border: 2px solid #3f5e72;
 }
 
 .select-pagination:disabled {
