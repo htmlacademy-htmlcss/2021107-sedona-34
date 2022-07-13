@@ -144,16 +144,16 @@ body {
   fill: #756157;
 }
 
-/* клик (мышью или с клавиатуры) */
-.navigation-link:active {
-  color: rgba(117, 97, 87, 0.3);
-  fill: rgba(117, 97, 87, 0.3);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .navigation-link:focus {
   color: #756157;
   fill: #756157;
+}
+
+/* клик (мышью или с клавиатуры) */
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-link-current::before {
@@ -218,13 +218,13 @@ body {
   background-color: #615048;
 }
 
+.navigation-item .button:focus {
+  background-color: #615048;
+}
+
 .navigation-item .button:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.navigation-item .button:focus {
-  background-color: #615048;
 }
 
 /*main основное содержание*/
@@ -437,15 +437,15 @@ body {
   background-color: #615048;
 }
 
+/* ссылка выбрана при переключении с клавиатуры */
+.search-link:focus {
+  background-color: #615048;
+}
+
 /* клик (мышью или с клавиатуры) */
 .search-link:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
-}
-
-/* ссылка выбрана при переключении с клавиатуры */
-.search-link:focus {
-  background-color: #615048;
 }
 
 /*фоновое изображение рассылки*/
@@ -501,7 +501,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  opacity: 0.6;
+  background-color: #f2f2f2;
 }
 
 /* наведение мыши */
@@ -509,17 +509,17 @@ body {
   background-color: #e6e6e6;
 }
 
+/* ссылка выбрана при переключении с клавиатуры */
+.subscribe-description-label input:focus {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
 /* клик (мышью или с клавиатуры) */
 .subscribe-description-label input:active {
   background-color: #ffffff;
   opacity: 1;
   outline: 2px solid #000000;
-}
-
-/* ссылка выбрана при переключении с клавиатуры */
-.subscribe-description-label input:focus {
-  background-color: #e6e6e6;
-  box-shadow: 0 0 0 3px #83b3d3;
 }
 
 .subscribe-description-label input:disabled {
@@ -543,15 +543,15 @@ body {
   background-color: #68a2ca;
 }
 
+/* ссылка выбрана при переключении с клавиатуры */
+.subscription-button:focus {
+  background-color: #68a2ca;
+}
+
 /* клик (мышью или с клавиатуры) */
 .subscription-button:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
-}
-
-/* ссылка выбрана при переключении с клавиатуры */
-.subscription-button:focus {
-  background-color: #68a2ca;
 }
 
 .subscription-button:disabled {
@@ -605,14 +605,14 @@ body {
   fill: #68a2ca;
 }
 
-/* клик (мышью или с клавиатуры) */
-.footer-social-link:active .social-icon {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .footer-social-link:focus .social-icon {
   fill: #68a2ca;
+}
+
+/* клик (мышью или с клавиатуры) */
+.footer-social-link:active .social-icon {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-contacts {
@@ -635,14 +635,14 @@ body {
   color: #756157;
 }
 
-/* клик (мышью или с клавиатуры) */
-.footer-contacts-addres-phone:active {
-  color: rgba(117, 97, 87, 0.3);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .footer-contacts-addres-phone:focus {
   color: #756157;
+}
+
+/* клик (мышью или с клавиатуры) */
+.footer-contacts-addres-phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .footer-partner {
@@ -654,14 +654,14 @@ body {
   fill: #756157;
 }
 
-/* клик (мышью или с клавиатуры) */
-.footer-partner:active .partner-icon {
-  fill: rgba(117, 97, 87, 0.3);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .footer-partner:focus .partner-icon {
   fill: #756157;
+}
+
+/* клик (мышью или с клавиатуры) */
+.footer-partner:active .partner-icon {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /* modal */
@@ -682,7 +682,7 @@ body {
 }
 
 .modal {
-  margin:396px auto auto;
+  margin:auto;
   padding: 54px 70px 70px;
   background-color: #ffffff;
 }
@@ -718,16 +718,16 @@ body {
   background-color: #e6e6e6;
 }
 
-/* клик (мышью или с клавиатуры) */
-.modal-close-button:active {
-  background-color: #e6e6e6;
-  background-image: url("../images/modal/close-activ.svg");
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .modal-close-button:focus {
   background-color: #e6e6e6;
   box-shadow: 0 0 0 3px #83b3d3;
+}
+
+/* клик (мышью или с клавиатуры) */
+.modal-close-button:active {
+  background-color: #e6e6e6;
+  background-image: url("../images/modal/close-activ.svg");
 }
 
 .modal-title {
@@ -781,6 +781,12 @@ body {
   background-color: #e6e6e6;
 }
 
+/* ссылка выбрана при переключении с клавиатуры */
+.description-form-field:focus {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
 /* клик (мышью или с клавиатуры) */
 .description-form-field:active {
   background-color: #ffffff;
@@ -788,13 +794,6 @@ body {
   outline: 2px solid #000000;
   border-radius: 4px;
 }
-
-/* ссылка выбрана при переключении с клавиатуры */
-.description-form-field:focus {
-  background-color: #e6e6e6;
-  box-shadow: 0 0 0 3px #83b3d3;
-}
-
 
 .modal-button-calendar {
   border: none;
@@ -907,16 +906,16 @@ body {
   background-color: #000000;
 }
 
-/* клик (мышью или с клавиатуры) */
-.modal-count-button:active::before,
-.modal-count-button:active::after {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .modal-count-button:focus::before,
 .modal-count-button:focus::after {
   background-color: #000000;
+}
+
+/* клик (мышью или с клавиатуры) */
+.modal-count-button:active::before,
+.modal-count-button:active::after {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* ссылка выбрана при переключении с клавиатуры */
@@ -934,7 +933,7 @@ body {
 
 /* ссылка выбрана при переключении с клавиатуры */
 .modal-count-button:last-of-type:focus {
-  right: 12px;
+  right: 13px;
 }
 
 .adults-people .description-form-field {
@@ -953,6 +952,12 @@ body {
   background-color: #e6e6e6;
 }
 
+/* ссылка выбрана при переключении с клавиатуры */
+.adults-people .description-form-field:focus {
+  background-color: #e6e6e6;
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
 /* клик (мышью или с клавиатуры) */
 .adults-people .description-form-field:active {
   background-color: #ffffff;
@@ -960,13 +965,6 @@ body {
   outline: 2px solid #000000;
   border-radius: 4px;
 }
-
-/* ссылка выбрана при переключении с клавиатуры */
-.adults-people .description-form-field:focus {
-  background-color: #e6e6e6;
-  box-shadow: 0 0 0 3px #83b3d3;
-}
-
 
 /* Убираем кнопки +/- у числового поля. */
 .description-form-field::-webkit-outer-spin-button,
@@ -995,16 +993,16 @@ body {
   background-color: #68a2ca;
 }
 
-/* клик (мышью или с клавиатуры) */
-.modal-button-search:active {
-  background-color: #68a2ca;
-  color: rgba(256, 256, 256, 0.3);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .modal-button-search:focus {
   background-color: #68a2ca;
   box-shadow: inset 0 0 0 3px #756257;
+}
+
+/* клик (мышью или с клавиатуры) */
+.modal-button-search:active {
+  background-color: #68a2ca;
+  color: rgba(256, 256, 256, 0.3);
 }
 
 /* tooltip */
@@ -1090,8 +1088,7 @@ body {
   background-position: center;
   background-color: #000000;
   color: #ffffff;
-  padding-top: 34px;
-  padding-bottom: 70px;
+  padding: 34px 0 70px;
 }
 
 .wrap-sort {
@@ -1099,21 +1096,19 @@ body {
 }
 
 .inner-header-title {
-  margin: 0;
-  margin-bottom: 5px;
+  margin: 0 0 5px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
 }
 
 .breadcrumbs {
-  margin: 0;
+  margin: 0 0 40px;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   max-width: 100%;
-  margin-bottom: 40px;
 }
 
 .breadcrumbs-item {
@@ -1153,14 +1148,14 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* клик (мышью или с клавиатуры) */
-.breadcrumbs-link:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .breadcrumbs-link:focus {
   color: #ffffff;
+}
+
+/* клик (мышью или с клавиатуры) */
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* наведение мыши */
@@ -1168,14 +1163,14 @@ body {
   fill: rgba(255, 255, 255, 0.6);
 }
 
-/* клик (мышью или с клавиатуры) */
-.breadcrumbs-link:active .breadcrumbs-icon {
-  fill: rgba(255, 255, 255, 0.3);
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .breadcrumbs-link:focus .breadcrumbs-icon {
   fill: #ffffff;
+}
+
+/* клик (мышью или с клавиатуры) */
+.breadcrumbs-link:active .breadcrumbs-icon {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-filter-wrap {
@@ -1265,13 +1260,13 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control:active:not(.type-housing .control) .control-mark {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
 .control:focus:not(.type-housing .control) .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 0 0 3px #83b3d3;
+}
+
+.control:active:not(.type-housing .control) .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .infrastructure {
@@ -1326,9 +1321,7 @@ body {
 
 .range-input {
   width: 100%;
-  padding: 12px 18px;
-  padding-bottom: 9px;
-  padding-right: 30px;
+  padding: 12px 30px 9px 18px;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1501,15 +1494,13 @@ body {
   flex-wrap: wrap;
   justify-content: end;
   align-items: center;
-  padding-top: 52px;
-  padding-bottom: 56px;
+  padding: 52px 0 56px;
 }
 
 .result-quantity {
   text-transform: uppercase;
   max-width: 370px;
-  margin: 0;
-  margin-right: auto;
+  margin: 0 auto 0 0;
 }
 
 .select {
@@ -1529,8 +1520,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  padding: 14px 14px;
-  padding-right: 50px;
+  padding: 14px 50px 14px 14px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   /* убираю галочку у селекта */
@@ -1751,8 +1741,7 @@ body {
 .pagination-wrap {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 16px;
+  padding: 30px 0 16px;
 }
 
 .pagination {
@@ -1821,9 +1810,8 @@ body {
 
 .pagination-sorting .select {
   min-width: 160px;
-  margin: 0;
+  margin: 3px 0 0;
   align-self: baseline;
-  margin-top: 3px;
 }
 
 .select-pagination {
@@ -1835,8 +1823,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  padding: 14px 14px;
-  padding-right: 50px;
+  padding: 14px 50px 14px 14px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   -webkit-appearance: none;
