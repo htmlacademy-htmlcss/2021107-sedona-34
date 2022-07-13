@@ -924,6 +924,7 @@ body {
   top: 20%;
   border-radius: 4px;
   box-shadow: 0 0 0 3px #83b3d3;
+  outline: none;
 }
 
 /* ссылка выбрана при переключении с клавиатуры */
@@ -1371,15 +1372,14 @@ body {
   border-left: 1px solid rgba(256, 256, 256, 0.6);
 }
 
-.catalog-filter-label:active .range-input {
-  background-color: #756257;
-}
-
 .catalog-filter-label:focus .range-input {
   box-shadow: 0 0 0 3px #81b3d2,
     inset 0 0 0 3px #81b3d2;
 }
 
+.catalog-filter-label:active .range-input {
+  background-color: #756257;
+}
 
 .range-scale {
   position: relative;
@@ -1410,11 +1410,14 @@ body {
 }
 
 .range-toggle:focus {
-  outline: 3px solid #83b3d3;
+  box-shadow:  0 0 0 3px #83b3d3,
+  0 0 4px 10px rgba(0, 0, 0, 0.25);
+  outline: none;
 }
 
 .range-toggle:active {
   outline: 2px solid #83b3d3;
+  box-shadow: 0 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .toggle-min {
@@ -1447,15 +1450,15 @@ body {
   background-color: #68a2ca;
 }
 
+/* ссылка выбрана при переключении с клавиатуры */
+.button-sort:focus {
+  background-color: #68a2ca;
+}
+
 /* клик (мышью или с клавиатуры) */
 .button-sort:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
-}
-
-/* ссылка выбрана при переключении с клавиатуры */
-.button-sort:focus {
-  background-color: #68a2ca;
 }
 
 .button-sort:disabled {
@@ -1478,14 +1481,14 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* клик (мышью или с клавиатуры) */
-.button-reset:active {
-  outline: 3px solid #83b3d3;
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .button-reset:focus {
   color: rgba(255, 255, 255, 0.3);
+}
+
+/* клик (мышью или с клавиатуры) */
+.button-reset:active {
+  outline: 3px solid #83b3d3;
 }
 
 /* Сортировка результатов */
@@ -1536,12 +1539,12 @@ body {
   border: 2px solid #68a2ca;
 }
 
-.select-control:active {
-  border: 2px solid #3f5e72;
-}
-
 .select-control:focus {
   border: 2px solid #68a2ca;
+}
+
+.select-control:active {
+  border: 2px solid #3f5e72;
 }
 
 .select-control:disabled {
@@ -1587,14 +1590,14 @@ body {
   box-shadow: inset 0 0 0 2px #000000;
 }
 
-/* клик (мышью или с клавиатуры) */
-.card-grid-toggle:active {
-  box-shadow: inset 0 0 0 2px #000000;
-}
-
 /* ссылка выбрана при переключении с клавиатуры */
 .card-grid-toggle:focus {
   box-shadow: inset 0 0 0 2px #68a2ca;
+}
+
+/* клик (мышью или с клавиатуры) */
+.card-grid-toggle:active {
+  box-shadow: inset 0 0 0 2px #000000;
 }
 
 /* Карточки отелей */
@@ -1661,13 +1664,13 @@ body {
   background-color: #615048;
 }
 
+.hotel-card-button:focus {
+  background-color: #615048;
+}
+
 .hotel-card-button:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.hotel-card-button:focus {
-  background-color: #615048;
 }
 
 .button-add {
@@ -1678,13 +1681,13 @@ body {
   background-color: #68a2ca;
 }
 
+.button-add:focus {
+  background-color: #68a2ca;
+}
+
 .button-add:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.button-add:focus {
-  background-color: #68a2ca;
 }
 
 .button-add-active {
@@ -1695,13 +1698,13 @@ body {
   background-color: #6c9e42;
 }
 
+.button-add-active:focus {
+  background-color: #6c9e42;
+}
+
 .button-add-active:active {
   background-color: #7db54f;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.button-add-active:focus {
-  background-color: #6c9e42;
 }
 
 .hotel-card-star {
@@ -1784,13 +1787,13 @@ body {
   background-color: #68a2ca;
 }
 
+.pagination-link:focus:not(.pagination-link-current) {
+  background-color: #68a2ca;
+}
+
 .pagination-link:active:not(.pagination-link-current) {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.pagination-link:focus:not(.pagination-link-current) {
-  background-color: #68a2ca;
 }
 
 .pagination-link-current {
@@ -1838,12 +1841,12 @@ body {
   border: 2px solid #68a2ca;
 }
 
-.select-pagination:active {
-  border: 2px solid #3f5e72;
-}
-
 .select-pagination:focus {
   border: 2px solid #68a2ca;
+}
+
+.select-pagination:active {
+  border: 2px solid #3f5e72;
 }
 
 .select-pagination:disabled {
