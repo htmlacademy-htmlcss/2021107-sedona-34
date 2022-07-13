@@ -65,9 +65,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   border: none;
-  padding: 15px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 15px;
   border-radius: 4px;
 }
 
@@ -242,8 +240,7 @@ body {
   background-image: url("../images/index/index-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 51px;
-  padding-bottom: 82px;
+  padding: 51px 0 82px 0;
   margin-bottom: 63px;
   position: relative;
 }
@@ -272,8 +269,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   max-width: 640px;
-  margin: 0 auto;
-  margin-bottom: 31px;
+  margin: 0 auto 31px;
 }
 
 .advantages-text {
@@ -281,8 +277,7 @@ body {
   text-align: center;
   font-weight: 400;
   max-width: 660px;
-  margin: 0 auto;
-  margin-bottom: 90px;
+  margin: 0 auto 90px;
 }
 
 /*Карточки преимуществ*/
@@ -378,16 +373,14 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 }
 
 .advantages-number {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
 }
 
 .advantages-description {
@@ -421,16 +414,14 @@ body {
 .search-title {
   text-transform: uppercase;
   max-width: 600px;
-  margin: 0 auto;
-  margin-bottom: 29px;
+  margin: 0 auto 29px;
 }
 
 .search-description {
   font-weight: 400;
   color: #333333;
   max-width: 600px;
-  margin: 0 auto;
-  margin-bottom: 55px;
+  margin: 0 auto 55px;
 }
 
 .search-link {
@@ -466,22 +457,19 @@ body {
   background-color: #000000;
   color: #ffffff;
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 
 .subscribe-title {
   text-transform: uppercase;
   max-width: 475px;
-  margin: 0 auto;
-  margin-bottom: 29px;
+  margin: 0 auto 29px;
 }
 
 .subscribe-description {
   font-weight: 400;
   max-width: 475px;
-  margin: 0 auto;
-  margin-bottom: 46px;
+  margin: 0 auto 46px;
 }
 
 .subscribe-form-wrap {
@@ -503,12 +491,11 @@ body {
 .subscribe-description-label input {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 22px;
   border: none;
   width: 100%;
   height: 100%;
   border-radius: 10px 0 0 10px;
-  padding-left: 22px;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -575,8 +562,7 @@ body {
 /*FOOTER*/
 
 .page-footer {
-  padding-top: 45px;
-  padding-bottom: 35px;
+  padding: 45px 0 35px;
 }
 
 .page-footer-container {
@@ -696,8 +682,7 @@ body {
 }
 
 .modal {
-  margin: auto;
-  margin-top: 396px;
+  margin:396px auto auto;
   padding: 54px 70px 70px;
   background-color: #ffffff;
 }
@@ -747,8 +732,7 @@ body {
 
 .modal-title {
   max-width: 500px;
-  margin: 0;
-  margin-right: auto;
+  margin: 0 auto 0 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1030,8 +1014,7 @@ body {
 
 .tooltip {
   position: absolute;
-  margin-left: 83px;
-  margin-top: -23px;
+  margin: -23px 0 0 83px;
   width: 25px;
   height: 25px;
 }
@@ -1066,9 +1049,7 @@ body {
   line-height: 21px;
   font-weight: 400;
   text-transform: none;
-  padding: 15px 22px;
-  padding-right: 18px;
-  padding-bottom: 22px;
+  padding: 15px 18px 22px 22px;
   width: 256px;
   position: relative;
   top: 16px;
@@ -1092,8 +1073,7 @@ body {
   bottom: 100%;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 0 auto;
 }
 
 
