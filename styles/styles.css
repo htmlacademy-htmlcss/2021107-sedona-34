@@ -120,6 +120,8 @@ body {
 .navigation-user {
   /* небольшой запас в размере */
   min-width: 264px;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .navigation .navigation-item {
@@ -127,6 +129,7 @@ body {
 }
 
 .navigation-link {
+  display: block;
   color: #000000;
   font-size: 20px;
   line-height: 26px;
@@ -1278,6 +1281,17 @@ body {
 
 .control:active:not(.type-housing .control) .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* состояние disabled checkbox and radio */
+
+.control:hover .control-input:disabled + .control-mark {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.control-input:disabled ~ span {
+  opacity: 0.33;
+  cursor: default;
 }
 
 .infrastructure {
