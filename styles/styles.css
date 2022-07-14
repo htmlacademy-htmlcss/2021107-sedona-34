@@ -120,6 +120,8 @@ body {
 .navigation-user {
   /* небольшой запас в размере */
   min-width: 264px;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .navigation .navigation-item {
@@ -127,6 +129,7 @@ body {
 }
 
 .navigation-link {
+  display: block;
   color: #000000;
   font-size: 20px;
   line-height: 26px;
